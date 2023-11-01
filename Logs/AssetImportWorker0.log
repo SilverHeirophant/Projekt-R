@@ -187,3 +187,35 @@ Received Import Request.
 Start importing Assets/Scenes/New SceneTemplate.scenetemplate using Guid(71ab41e615b264b0c9117714fefeec0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec25ca62ed60f6293e391ddc616b1787') in 0.808035 seconds 
   Import took 0.814518 seconds .
 
+========================================================================
+Received Import Request.
+  Time since last request: 1077.328385 seconds.
+  path: Assets/Materials
+  artifactKey: Guid(fd7e97645873d4f2cafd1f9802666ea7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials using Guid(fd7e97645873d4f2cafd1f9802666ea7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77194cd424f11ab66d7c9e7b2d41994a') in 0.001510 seconds 
+  Import took 0.003290 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.053084 seconds.
+  path: Assets/Scripts
+  artifactKey: Guid(69ff94722e26d45c588142f69e06fe31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts using Guid(69ff94722e26d45c588142f69e06fe31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3c0ffafd3aaebdf29eb997fbb824bd8') in 0.001907 seconds 
+  Import took 0.004086 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.367254 seconds.
+  path: Assets/Prefabs
+  artifactKey: Guid(8681f5b2fdadd47ea884d31ed2a2038d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs using Guid(8681f5b2fdadd47ea884d31ed2a2038d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43d1ab7933aff606125ed9d331f6f258') in 0.001644 seconds 
+  Import took 0.003761 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.175253 seconds.
+  path: Assets/Prefabs/SoundPrefabs
+  artifactKey: Guid(6aadf3183459741358871003319fe524) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/SoundPrefabs using Guid(6aadf3183459741358871003319fe524) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a278563440d1f63bdf2c6556a535b2b') in 0.001536 seconds 
+  Import took 0.003383 seconds .
+
