@@ -5,16 +5,26 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
+<<<<<<< Updated upstream
       ticks: 638346308550000000
     m_Hash: 1591064493
+=======
+      ticks: 638346309490000000
+    m_Hash: 2699641822
+>>>>>>> Stashed changes
   m_LockFileStatus:
     m_FilePath: /Users/computerscience/Documents/GitHub/Projekt-R/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
+<<<<<<< Updated upstream
       ticks: 638346308550000000
     m_Hash: 3056246246
+=======
+      ticks: 638346309490000000
+    m_Hash: 4037515135
+>>>>>>> Stashed changes
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_PackageAssets:
