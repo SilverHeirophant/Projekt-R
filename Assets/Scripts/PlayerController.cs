@@ -27,5 +27,11 @@ public class PlayerController : MonoBehaviour
         transform.Translate(Vector3.up * speed * Time.deltaTime);
         transform.Translate(Vector3.forward * horizontalInput * speed * Time.deltaTime);
         transform.Translate(Vector3.left * verticalInput * speed * Time.deltaTime);
+    
+        float z = horizontalInput;
+        Vector3 euler = transform.localEulerAngles;
+        euler.z = Mathf.Lerp(euler.z, z, 2.0f * Time.deltaTime);
+        transform.localEulerAngles = euler;
+    
     }
 }
