@@ -853,7 +853,6 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 2a6046a4b09134ad48b22eb15c70d7c4, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85f4229977c9ee247bc4425710c5b0c4, type: 3}
-<<<<<<< Updated upstream
 --- !u!1 &880304144
 GameObject:
   m_ObjectHideFlags: 0
@@ -886,8 +885,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-=======
->>>>>>> Stashed changes
 --- !u!1 &894793097
 GameObject:
   m_ObjectHideFlags: 0
@@ -1009,7 +1006,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 894793097}
   m_CullTransparentMesh: 1
-<<<<<<< Updated upstream
 --- !u!1 &915412948
 GameObject:
   m_ObjectHideFlags: 0
@@ -1112,8 +1108,6 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: -1
   m_TargetDisplay: 0
-=======
->>>>>>> Stashed changes
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
