@@ -299,3 +299,11 @@ Received Import Request.
 Start importing Assets/SimpleCumulus/Skyboxes/PlainColor/Blue/SimpleCumulus_Blue_06/SimpleCumulus_Blue_06.mat using Guid(b7cbdd47460dd2147b5d8204587cc639) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2782c65dba7b72967f7910acb98dd3a') in 0.185257 seconds 
   Import took 0.197439 seconds .
 
+========================================================================
+Received Import Request.
+  Time since last request: 95.435025 seconds.
+  path: Assets/Scenes/Level 1.unity
+  artifactKey: Guid(a38f5f190c49040418baa566d5ab19ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Level 1.unity using Guid(a38f5f190c49040418baa566d5ab19ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bdcd9947f2d81f4467371940fc018ac6') in 0.001454 seconds 
+  Import took 0.004100 seconds .
+
