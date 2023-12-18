@@ -22,55 +22,55 @@ AssetImportWorker0
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-58127
+60315
 Successfully changed project path to: /Users/computerscience/Desktop/Projekt-R
 Could not lock editor preferences. Preferences updates for this instance of Unity will not be saved./Users/computerscience/Desktop/Projekt-R
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 37.21 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 38.36 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.27f1 (e759542391ea)
 [Subsystems] Discovering subsystems at path /Applications/2020.3.27f1/Unity.app/Contents/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path /Users/computerscience/Desktop/Projekt-R/Assets
 GfxDevice: creating device client; threaded=0
-2023-12-18 10:05:30.696 Unity[11884:452868] iMac preferred device: AMD Radeon Pro 5500 XT (high power)
-2023-12-18 10:05:30.696 Unity[11884:452868] Metal devices available: 1
-2023-12-18 10:05:30.696 Unity[11884:452868] 0: AMD Radeon Pro 5500 XT (high power)
-2023-12-18 10:05:30.696 Unity[11884:452868] Using device AMD Radeon Pro 5500 XT (high power)
+2023-12-18 13:37:06.881 Unity[15964:591181] iMac preferred device: AMD Radeon Pro 5500 XT (high power)
+2023-12-18 13:37:06.881 Unity[15964:591181] Metal devices available: 1
+2023-12-18 13:37:06.881 Unity[15964:591181] 0: AMD Radeon Pro 5500 XT (high power)
+2023-12-18 13:37:06.881 Unity[15964:591181] Using device AMD Radeon Pro 5500 XT (high power)
 Initializing Metal device caps: AMD Radeon Pro 5500 XT
 Initialize mono
 Mono path[0] = '/Applications/2020.3.27f1/Unity.app/Contents/Managed'
 Mono path[1] = '/Applications/2020.3.27f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = '/Applications/2020.3.27f1/Unity.app/Contents/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56884
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56964
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: /Applications/2020.3.27f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
-Registered in 0.000418 seconds.
+Registered in 0.000390 seconds.
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 35.80 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 38.09 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.498 seconds
+- Completed reload, in  0.503 seconds
 Domain Reload Profiling:
-	ReloadAssembly (498ms)
-		BeginReloadAssembly (38ms)
+	ReloadAssembly (504ms)
+		BeginReloadAssembly (36ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (401ms)
-			LoadAssemblies (37ms)
+		EndReloadAssembly (407ms)
+			LoadAssemblies (36ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (146ms)
+			SetupTypeCache (147ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (30ms)
-			SetupLoadedEditorAssemblies (158ms)
+			SetupLoadedEditorAssemblies (160ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (3ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (36ms)
-				BeforeProcessingInitializeOnLoad (6ms)
+				RefreshPlugins (38ms)
+				BeforeProcessingInitializeOnLoad (7ms)
 				ProcessInitializeOnLoadAttributes (87ms)
 				ProcessInitializeOnLoadMethodAttributes (25ms)
 				AfterProcessingInitializeOnLoad (0ms)
@@ -79,43 +79,43 @@ Domain Reload Profiling:
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.001256 seconds.
+Registered in 0.001315 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.43 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.42 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.886 seconds
+- Completed reload, in  0.894 seconds
 Domain Reload Profiling:
-	ReloadAssembly (888ms)
-		BeginReloadAssembly (121ms)
+	ReloadAssembly (894ms)
+		BeginReloadAssembly (122ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (23ms)
-		EndReloadAssembly (718ms)
-			LoadAssemblies (61ms)
+		EndReloadAssembly (721ms)
+			LoadAssemblies (62ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (270ms)
+			SetupTypeCache (272ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (47ms)
-			SetupLoadedEditorAssemblies (253ms)
+			SetupLoadedEditorAssemblies (256ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (3ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (0ms)
 				BeforeProcessingInitializeOnLoad (45ms)
-				ProcessInitializeOnLoadAttributes (195ms)
+				ProcessInitializeOnLoadAttributes (198ms)
 				ProcessInitializeOnLoadMethodAttributes (8ms)
 				AfterProcessingInitializeOnLoad (1ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (5ms)
 Platform modules already initialized, skipping
-Validating Project structure ... 0.015475 seconds.
+Validating Project structure ... 0.014060 seconds.
 Shader import version has changed; will reimport all shaders...
-Upgrading shader files ...0.033377 seconds.
+Upgrading shader files ...0.028481 seconds.
 Application.AssetDatabase Initial Script Refresh Start
 RefreshInfo: InitialScriptRefreshV2(NoUpdateAssetOptions) scanfilter:  ... 1 filters
 RefreshProfiler: Total: 0.000ms
@@ -127,474 +127,18 @@ RefreshProfiler: Total: 0.000ms
 Launching external process: /Applications/2020.3.27f1/Unity.app/Contents/Tools/UnityShaderCompiler
 Launched and connected shader compiler UnityShaderCompiler after 0.01 seconds
 Initializing Unity extensions:
-2023-12-18 10:05:33.419 Unity[11884:452868] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x7fb96d9b9840 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
-2023-12-18 10:05:33.422 Unity[11884:452868] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x7fb96d9bbca0 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+2023-12-18 13:37:09.010 Unity[15964:591181] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x7fe2a40b2960 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+2023-12-18 13:37:09.014 Unity[15964:591181] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x7fe2a40b4dc0 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
 ========================================================================
 Worker process is ready to serve import requests
-Refreshing native plugins compatible for Editor in 0.39 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.42 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2107 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 113.2 MB.
 System memory in use after: 110.4 MB.
 
 Unloading 179 unused Assets to reduce memory usage. Loaded Objects now: 2567.
-Total: 3.923421 ms (FindLiveObjects: 0.156505 ms CreateObjectMapping: 0.081668 ms MarkObjects: 2.078720 ms  DeleteObjects: 1.605932 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  path: Assets/UnityAssets/GameObjects/10 Airplane Models Pack/10 Airplanes Lowpoly Pack.fbx
-  artifactKey: Guid(6117afad3090c044ab3879484a72c963) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UnityAssets/GameObjects/10 Airplane Models Pack/10 Airplanes Lowpoly Pack.fbx using Guid(6117afad3090c044ab3879484a72c963) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cdb521a6f8dc9e83ff101bd4c1c60a9a') in 0.801423 seconds 
-  Import took 0.807041 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000170 seconds.
-  path: Assets/UnityAssets/Environment/SimpleCumulus/Skyboxes/Gradient/SimpleCumulus_Gradient_03/SimpleCumulus_Gradient_03.mat
-  artifactKey: Guid(187c15a21fc7f2346a831d66b7b247cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UnityAssets/Environment/SimpleCumulus/Skyboxes/Gradient/SimpleCumulus_Gradient_03/SimpleCumulus_Gradient_03.mat using Guid(187c15a21fc7f2346a831d66b7b247cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f43b3a30fc7678bf8358712ad743ea7b') in 0.277617 seconds 
-  Import took 0.291950 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000251 seconds.
-  path: Assets/UnityAssets/Environment/BrokenVector/LowPolyRockPack/Materials/Green.mat
-  artifactKey: Guid(58580be5a1ee44d42a9966d48abb8758) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UnityAssets/Environment/BrokenVector/LowPolyRockPack/Materials/Green.mat using Guid(58580be5a1ee44d42a9966d48abb8758) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c5700a669a299a796e0ed47afaf904d') in 0.006876 seconds 
-  Import took 0.009488 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000154 seconds.
-  path: Assets/UnityAssets/Environment/SimpleCumulus/Demo/Materials/GroundTexture.mat
-  artifactKey: Guid(6e3f986af96b0864f9b448013dd16ddf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UnityAssets/Environment/SimpleCumulus/Demo/Materials/GroundTexture.mat using Guid(6e3f986af96b0864f9b448013dd16ddf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83140bc809e58a330c525147dbdcac35') in 0.007893 seconds 
-  Import took 0.010448 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000138 seconds.
-  path: Assets/UnityAssets/Environment/SimpleCumulus/Skyboxes/Gradient/SimpleCumulus_Gradient_07/SimpleCumulus_Gradient_07.mat
-  artifactKey: Guid(84db88626c4e4d14da132a180ec148dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UnityAssets/Environment/SimpleCumulus/Skyboxes/Gradient/SimpleCumulus_Gradient_07/SimpleCumulus_Gradient_07.mat using Guid(84db88626c4e4d14da132a180ec148dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a141d7ceb1d731a3073d2ba9a86563a') in 0.151942 seconds 
-  Import took 0.163292 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000224 seconds.
-  path: Packages/com.unity.probuilder/Content/Resources/Materials/ProBuilderDefault.mat
-  artifactKey: Guid(c22777d6e868e4f2fb421913386b154e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.probuilder/Content/Resources/Materials/ProBuilderDefault.mat using Guid(c22777d6e868e4f2fb421913386b154e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68dd98fd11319920ff295739c34f63f1') in 0.398415 seconds 
-  Import took 0.401827 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000189 seconds.
-  path: Assets/UnityAssets/Environment/SimpleCumulus/Skyboxes/PlainColor/Blue/SimpleCumulus_Blue_06/SimpleCumulus_Blue_06.mat
-  artifactKey: Guid(b7cbdd47460dd2147b5d8204587cc639) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UnityAssets/Environment/SimpleCumulus/Skyboxes/PlainColor/Blue/SimpleCumulus_Blue_06/SimpleCumulus_Blue_06.mat using Guid(b7cbdd47460dd2147b5d8204587cc639) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2782c65dba7b72967f7910acb98dd3a') in 0.153253 seconds 
-  Import took 0.165240 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000177 seconds.
-  path: Packages/com.unity.probuilder/Content/Resources/Materials/EdgePickerHDRP.mat
-  artifactKey: Guid(980c24c5a501a9a429356d191ad356a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.probuilder/Content/Resources/Materials/EdgePickerHDRP.mat using Guid(980c24c5a501a9a429356d191ad356a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c175e8bfe75860b542cac7b9bba7728') in 0.026502 seconds 
-  Import took 0.029561 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000145 seconds.
-  path: Assets/UnityAssets/Environment/SimpleCumulus/Skyboxes/PlainColor/Purple/SimpleCumulus_Purple_01/SimpleCumulus_Purple_01.mat
-  artifactKey: Guid(5f4c648411fd0304a879e473d0aeb4e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UnityAssets/Environment/SimpleCumulus/Skyboxes/PlainColor/Purple/SimpleCumulus_Purple_01/SimpleCumulus_Purple_01.mat using Guid(5f4c648411fd0304a879e473d0aeb4e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '039ff5c970caf0de08b6d51bc13ce66b') in 0.154358 seconds 
-  Import took 0.166667 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000222 seconds.
-  path: Packages/com.unity.probuilder/Content/Resources/Materials/EdgePicker.mat
-  artifactKey: Guid(4ff996e3a0a5743a3987ab6231160665) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.probuilder/Content/Resources/Materials/EdgePicker.mat using Guid(4ff996e3a0a5743a3987ab6231160665) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd28d434726e9e97d045a08030b0203f') in 0.007581 seconds 
-  Import took 0.011352 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000138 seconds.
-  path: Packages/com.unity.probuilder/Content/Resources/Materials/Collider.mat
-  artifactKey: Guid(bbb235fff4f48426b863b36058ab66d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.probuilder/Content/Resources/Materials/Collider.mat using Guid(bbb235fff4f48426b863b36058ab66d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44a42be3d3ff4523c0a6370be823cc43') in 0.069750 seconds 
-  Import took 0.072203 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000173 seconds.
-  path: Packages/com.unity.probuilder/Content/Resources/Materials/NoDraw.mat
-  artifactKey: Guid(8cb4d6fee77fd4ee6895f08b240d625f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.probuilder/Content/Resources/Materials/NoDraw.mat using Guid(8cb4d6fee77fd4ee6895f08b240d625f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '535e3ab3f50e3318f2107a16560a9599') in 0.018517 seconds 
-  Import took 0.021029 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000152 seconds.
-  path: Packages/com.unity.probuilder/Content/Material/Checker.mat
-  artifactKey: Guid(4717b199010ca4cb3a8a7a465ec457d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.probuilder/Content/Material/Checker.mat using Guid(4717b199010ca4cb3a8a7a465ec457d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e9cc05b182fa831cd6c3345592eb77b') in 0.046780 seconds 
-  Import took 0.049264 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000202 seconds.
-  path: Assets/UnityAssets/UI Resources/Sci-Fi UI/_SciFi_GUISkin_/Skin_Assets/font/zekton free.ttf
-  artifactKey: Guid(8297a2bf97dbbba468bd2518d003a876) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UnityAssets/UI Resources/Sci-Fi UI/_SciFi_GUISkin_/Skin_Assets/font/zekton free.ttf using Guid(8297a2bf97dbbba468bd2518d003a876) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd42264241dc922dd7e6aaa5c2b9afaf') in 1.484901 seconds 
-  Import took 1.490290 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000152 seconds.
-  path: Assets/UnityAssets/Environment/BrokenVector/LowPolyRockPack/Materials/Sand.mat
-  artifactKey: Guid(ab1c456102124f54b9ac73a185735796) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UnityAssets/Environment/BrokenVector/LowPolyRockPack/Materials/Sand.mat using Guid(ab1c456102124f54b9ac73a185735796) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'adfebd70d9d7231660f282f1ad53fb2e') in 0.006537 seconds 
-  Import took 0.009014 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000141 seconds.
-  path: Assets/UnityAssets/Isle of Assets/Mobile Force Field/Materials/ForceField_2.mat
-  artifactKey: Guid(383350809ebe1f642a18c24cc7c02b7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UnityAssets/Isle of Assets/Mobile Force Field/Materials/ForceField_2.mat using Guid(383350809ebe1f642a18c24cc7c02b7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4536b6f446061ae4834b7d6e16f18552') in 0.022499 seconds 
-  Import took 0.024941 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000145 seconds.
-  path: Assets/Materials/ground.mat
-  artifactKey: Guid(dfef54abea06842e59992ed825e3b5e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/ground.mat using Guid(dfef54abea06842e59992ed825e3b5e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5ecd1b1d643078727015c0aa3c08635') in 0.007490 seconds 
-  Import took 0.010055 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000147 seconds.
-  path: Assets/UnityAssets/Environment/SimpleCumulus/Skyboxes/PlainColor/Blue/SimpleCumulus_Blue_01/SimpleCumulus_Blue_01.mat
-  artifactKey: Guid(3802fb8899dc2df428fb805843045a49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UnityAssets/Environment/SimpleCumulus/Skyboxes/PlainColor/Blue/SimpleCumulus_Blue_01/SimpleCumulus_Blue_01.mat using Guid(3802fb8899dc2df428fb805843045a49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad370b041c043ad4daa0d21508b8fe35') in 0.152298 seconds 
-  Import took 0.163462 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000144 seconds.
-  path: Assets/UnityAssets/Asteroids Pack/Assets/Materials/large_asteroid.mat
-  artifactKey: Guid(0e47fa6aa96cfd044b946d9923d4a47a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UnityAssets/Asteroids Pack/Assets/Materials/large_asteroid.mat using Guid(0e47fa6aa96cfd044b946d9923d4a47a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee7ad62f1c21e0bd168bdd3e3e2e5fc6') in 0.316295 seconds 
-  Import took 0.320053 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000159 seconds.
-  path: Assets/UnityAssets/Environment/SimpleCumulus/Skyboxes/PlainColor/Blue/SimpleCumulus_Blue_05/SimpleCumulus_Blue_05.mat
-  artifactKey: Guid(216fad10b441e8549873e05938e7a295) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UnityAssets/Environment/SimpleCumulus/Skyboxes/PlainColor/Blue/SimpleCumulus_Blue_05/SimpleCumulus_Blue_05.mat using Guid(216fad10b441e8549873e05938e7a295) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b9be8364b04a258798f806441402598') in 0.151216 seconds 
-  Import took 0.162943 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000220 seconds.
-  path: Assets/UnityAssets/Environment/SimpleCumulus/Skyboxes/Gradient/SimpleCumulus_Gradient_05/SimpleCumulus_Gradient_05.mat
-  artifactKey: Guid(00335061f55411f49b0d0eaa9150f4b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UnityAssets/Environment/SimpleCumulus/Skyboxes/Gradient/SimpleCumulus_Gradient_05/SimpleCumulus_Gradient_05.mat using Guid(00335061f55411f49b0d0eaa9150f4b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25b55fef4622049b89c63cc0aa91af1b') in 0.152574 seconds 
-  Import took 0.164402 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000178 seconds.
-  path: Assets/UnityAssets/Environment/SimpleCumulus/Skyboxes/Gradient/SimpleCumulus_Gradient_06/SimpleCumulus_Gradient_06.mat
-  artifactKey: Guid(364641eb7d92a7f4b9ebd78b0d887aad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UnityAssets/Environment/SimpleCumulus/Skyboxes/Gradient/SimpleCumulus_Gradient_06/SimpleCumulus_Gradient_06.mat using Guid(364641eb7d92a7f4b9ebd78b0d887aad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54225ed09fd65703a96730099f0b18ed') in 0.152756 seconds 
-  Import took 0.164750 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000170 seconds.
-  path: Packages/com.unity.probuilder/Content/Resources/Materials/FacePickerHDRP.mat
-  artifactKey: Guid(a53ef0dd76f2fe74eb5f43267d7c0195) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.probuilder/Content/Resources/Materials/FacePickerHDRP.mat using Guid(a53ef0dd76f2fe74eb5f43267d7c0195) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b3a98f947b9445050f05ee155da7b12') in 0.007930 seconds 
-  Import took 0.010662 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000141 seconds.
-  path: Assets/UnityAssets/Environment/SimpleCumulus/Skyboxes/Gradient/SimpleCumulus_Gradient_04/SimpleCumulus_Gradient_04.mat
-  artifactKey: Guid(24c5d5aed6fb04645a8a99894ef1beae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UnityAssets/Environment/SimpleCumulus/Skyboxes/Gradient/SimpleCumulus_Gradient_04/SimpleCumulus_Gradient_04.mat using Guid(24c5d5aed6fb04645a8a99894ef1beae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08c28c68ce77d90f7611c0916967fec6') in 0.152276 seconds 
-  Import took 0.164158 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000203 seconds.
-  path: Assets/UnityAssets/Environment/SimpleCumulus/Skyboxes/Gradient/SimpleCumulus_Gradient_01/SimpleCumulus_Gradient_01.mat
-  artifactKey: Guid(4d0e0ffc7a6c1bf44b435e0b23260f8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UnityAssets/Environment/SimpleCumulus/Skyboxes/Gradient/SimpleCumulus_Gradient_01/SimpleCumulus_Gradient_01.mat using Guid(4d0e0ffc7a6c1bf44b435e0b23260f8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa0c9f75020df7ca0052c632e3211611') in 0.153309 seconds 
-  Import took 0.165512 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000173 seconds.
-  path: Assets/UnityAssets/UI Resources/SimplePixelUI/fonts/Font1/pixelfont.ttf
-  artifactKey: Guid(b6349d08a5335cd4aa534282435d11cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UnityAssets/UI Resources/SimplePixelUI/fonts/Font1/pixelfont.ttf using Guid(b6349d08a5335cd4aa534282435d11cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b713bd15d6381586255acee59b5f05d9') in 0.009588 seconds 
-  Import took 0.012359 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000137 seconds.
-  path: Assets/UnityAssets/Environment/SimpleCumulus/Skyboxes/Gradient/SimpleCumulus_Gradient_08/SimpleCumulus_Gradient_08.mat
-  artifactKey: Guid(53de9a2fa60cfae4a9eb04ff616a141a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UnityAssets/Environment/SimpleCumulus/Skyboxes/Gradient/SimpleCumulus_Gradient_08/SimpleCumulus_Gradient_08.mat using Guid(53de9a2fa60cfae4a9eb04ff616a141a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '149f4adaae835860bb0c25065c71b946') in 0.151208 seconds 
-  Import took 0.162998 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000289 seconds.
-  path: Assets/Local_Imports/blac.mat
-  artifactKey: Guid(758703f7d887c4fd18eefbc034fe1dfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Local_Imports/blac.mat using Guid(758703f7d887c4fd18eefbc034fe1dfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a49acdfc0b09376634f68a9907eafa45') in 0.007638 seconds 
-  Import took 0.010694 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000144 seconds.
-  path: Packages/com.unity.probuilder/Content/Resources/Materials/FacePicker.mat
-  artifactKey: Guid(5695904020f064fdab5ad265b274a616) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.probuilder/Content/Resources/Materials/FacePicker.mat using Guid(5695904020f064fdab5ad265b274a616) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f70878b45adf3d082628ad7d5ad9c24') in 0.006123 seconds 
-  Import took 0.008598 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000144 seconds.
-  path: Assets/UnityAssets/Environment/SimpleCumulus/Skyboxes/PlainColor/Orange/SimpleCumulus_Orange_01/SimpleCumulus_Orange_01.mat
-  artifactKey: Guid(c794ae30c13c5324eab85bc85b385008) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UnityAssets/Environment/SimpleCumulus/Skyboxes/PlainColor/Orange/SimpleCumulus_Orange_01/SimpleCumulus_Orange_01.mat using Guid(c794ae30c13c5324eab85bc85b385008) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f49990800a7d749bdadb1d5d8d63682') in 0.154739 seconds 
-  Import took 0.166660 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000174 seconds.
-  path: Assets/UnityAssets/Environment/SimpleCumulus/Skyboxes/PlainColor/Purple/SimpleCumulus_Purple_03/SimpleCumulus_Purple_03.mat
-  artifactKey: Guid(1d5f813f9362dbb4a9448c07c320c8a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UnityAssets/Environment/SimpleCumulus/Skyboxes/PlainColor/Purple/SimpleCumulus_Purple_03/SimpleCumulus_Purple_03.mat using Guid(1d5f813f9362dbb4a9448c07c320c8a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dfbd65a3ac35e38b1aa8db87b6aa013d') in 0.154461 seconds 
-  Import took 0.166277 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000238 seconds.
-  path: Assets/UnityAssets/Environment/SimpleCumulus/Skyboxes/PlainColor/Orange/SimpleCumulus_Orange_03/SimpleCumulus_Orange_03.mat
-  artifactKey: Guid(e4528f3b287f79645977bbe603cb4c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UnityAssets/Environment/SimpleCumulus/Skyboxes/PlainColor/Orange/SimpleCumulus_Orange_03/SimpleCumulus_Orange_03.mat using Guid(e4528f3b287f79645977bbe603cb4c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd8b868c30a37e910c7d433650b1d752') in 0.153211 seconds 
-  Import took 0.165966 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000164 seconds.
-  path: Assets/UnityAssets/Environment/BrokenVector/LowPolyRockPack/Materials/Orange.mat
-  artifactKey: Guid(aeea0b0ce40f57741addd46857bdbc00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UnityAssets/Environment/BrokenVector/LowPolyRockPack/Materials/Orange.mat using Guid(aeea0b0ce40f57741addd46857bdbc00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1cd9b3a9981a0309b407cd66700ddc4d') in 0.007817 seconds 
-  Import took 0.011125 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000138 seconds.
-  path: Assets/UnityAssets/Isle of Assets/Mobile Force Field/Materials/ForceField_1.mat
-  artifactKey: Guid(0960f507df40faa4ea033d24d5327f61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UnityAssets/Isle of Assets/Mobile Force Field/Materials/ForceField_1.mat using Guid(0960f507df40faa4ea033d24d5327f61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8201551032b1664abb23f37173b73a1') in 0.008768 seconds 
-  Import took 0.011205 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000138 seconds.
-  path: Assets/UnityAssets/Environment/SimpleCumulus/Skyboxes/PlainColor/Blue/SimpleCumulus_Blue_02/SimpleCumulus_Blue_02.mat
-  artifactKey: Guid(36fb054fe8607ea4e80cc945c01900a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UnityAssets/Environment/SimpleCumulus/Skyboxes/PlainColor/Blue/SimpleCumulus_Blue_02/SimpleCumulus_Blue_02.mat using Guid(36fb054fe8607ea4e80cc945c01900a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '435deaf8d9a30a92f0da5a5a0ca402f7') in 0.152505 seconds 
-  Import took 0.164136 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000158 seconds.
-  path: Assets/UnityAssets/Environment/BrokenVector/LowPolyRockPack/Materials/Grey.mat
-  artifactKey: Guid(18ec5123ab1b37446998bf1b1228a0c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UnityAssets/Environment/BrokenVector/LowPolyRockPack/Materials/Grey.mat using Guid(18ec5123ab1b37446998bf1b1228a0c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca3927fa513cbf00514624039542f219') in 0.007483 seconds 
-  Import took 0.010407 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000150 seconds.
-  path: Assets/UnityAssets/Environment/SimpleCumulus/Skyboxes/Gradient/SimpleCumulus_Gradient_02/SimpleCumulus_Gradient_02.mat
-  artifactKey: Guid(f9c898edef9d7b64f89790e4c635834d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UnityAssets/Environment/SimpleCumulus/Skyboxes/Gradient/SimpleCumulus_Gradient_02/SimpleCumulus_Gradient_02.mat using Guid(f9c898edef9d7b64f89790e4c635834d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e8d52e600303dc2550f10564daa1e73') in 0.151108 seconds 
-  Import took 0.163292 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000165 seconds.
-  path: Assets/UnityAssets/Environment/BrokenVector/LowPolyRockPack/Materials/Colorsheet Rock Orange.mat
-  artifactKey: Guid(2a6046a4b09134ad48b22eb15c70d7c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UnityAssets/Environment/BrokenVector/LowPolyRockPack/Materials/Colorsheet Rock Orange.mat using Guid(2a6046a4b09134ad48b22eb15c70d7c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c5210f3b3f1104ca239a73dcf63f886') in 0.006339 seconds 
-  Import took 0.009254 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000150 seconds.
-  path: Assets/UnityAssets/Isle of Assets/Mobile Force Field/Materials/Ground.mat
-  artifactKey: Guid(2242ac91ef2456245aac3ac10777a380) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UnityAssets/Isle of Assets/Mobile Force Field/Materials/Ground.mat using Guid(2242ac91ef2456245aac3ac10777a380) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b408e3a8b2714f7183e7f64bc7b6fe75') in 0.135722 seconds 
-  Import took 0.138260 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000131 seconds.
-  path: Assets/UnityAssets/UI Resources/SimplePixelUI/fonts/Font2/pixelfont2.ttf
-  artifactKey: Guid(a6dede01cb8e479429b8bc5253a2ad2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UnityAssets/UI Resources/SimplePixelUI/fonts/Font2/pixelfont2.ttf using Guid(a6dede01cb8e479429b8bc5253a2ad2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9cf61bdd16fac730b5d094f572a8f9dc') in 0.007581 seconds 
-  Import took 0.010293 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000149 seconds.
-  path: Assets/UnityAssets/GameObjects/10 Airplane Models Pack/material.mat
-  artifactKey: Guid(bbc2e18e6ee01e74db850dc07e86e1c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UnityAssets/GameObjects/10 Airplane Models Pack/material.mat using Guid(bbc2e18e6ee01e74db850dc07e86e1c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ca28cc9aa9899be6d4f9b82ea42c384') in 0.005991 seconds 
-  Import took 0.008811 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000142 seconds.
-  path: Packages/com.unity.probuilder/Content/Resources/Materials/InvisibleFace.mat
-  artifactKey: Guid(978bbcf5050244f1b95128c04103f628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.probuilder/Content/Resources/Materials/InvisibleFace.mat using Guid(978bbcf5050244f1b95128c04103f628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d1d76733010469944841b9ed426a584') in 0.024060 seconds 
-  Import took 0.026827 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000147 seconds.
-  path: Assets/UnityAssets/Environment/SimpleCumulus/Skyboxes/PlainColor/Blue/SimpleCumulus_Blue_03/SimpleCumulus_Blue_03.mat
-  artifactKey: Guid(665181ce136808e40ad024e9a8fbb118) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UnityAssets/Environment/SimpleCumulus/Skyboxes/PlainColor/Blue/SimpleCumulus_Blue_03/SimpleCumulus_Blue_03.mat using Guid(665181ce136808e40ad024e9a8fbb118) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76fdeb5bd2e4405e45a1ec2de77e8a06') in 0.152055 seconds 
-  Import took 0.163864 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000301 seconds.
-  path: Assets/UnityAssets/Environment/SimpleCumulus/Skyboxes/PlainColor/Orange/SimpleCumulus_Orange_02/SimpleCumulus_Orange_02.mat
-  artifactKey: Guid(e05a8e3a000818046b640496bcb5b94c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UnityAssets/Environment/SimpleCumulus/Skyboxes/PlainColor/Orange/SimpleCumulus_Orange_02/SimpleCumulus_Orange_02.mat using Guid(e05a8e3a000818046b640496bcb5b94c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e7ae1e12c2de2d2e55fffe77eb33319') in 0.151733 seconds 
-  Import took 0.163667 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000189 seconds.
-  path: Assets/UnityAssets/Fonts/Thaleah_PixelFont/Materials/ThaleahFat_TTF.ttf
-  artifactKey: Guid(585188cdc4600544eb408bee749e4b3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UnityAssets/Fonts/Thaleah_PixelFont/Materials/ThaleahFat_TTF.ttf using Guid(585188cdc4600544eb408bee749e4b3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8831fc957ae6a8ef608980f322d98a79') in 0.008982 seconds 
-  Import took 0.012066 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000146 seconds.
-  path: Assets/UnityAssets/Environment/SimpleCumulus/Skyboxes/PlainColor/Purple/SimpleCumulus_Purple_02/SimpleCumulus_Purple_02.mat
-  artifactKey: Guid(7e8bd35e38ba26c4fa97e58fa5b291b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UnityAssets/Environment/SimpleCumulus/Skyboxes/PlainColor/Purple/SimpleCumulus_Purple_02/SimpleCumulus_Purple_02.mat using Guid(7e8bd35e38ba26c4fa97e58fa5b291b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '204be777667d2aa72fc338567c6c7e42') in 0.153375 seconds 
-  Import took 0.164995 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000170 seconds.
-  path: Assets/UnityAssets/Environment/SimpleCumulus/Skyboxes/Gradient/SimpleCumulus_Gradient_10/SimpleCumulus_Gradient_10.mat
-  artifactKey: Guid(0a6a46f3bb9d1444ca868d6ee739340a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UnityAssets/Environment/SimpleCumulus/Skyboxes/Gradient/SimpleCumulus_Gradient_10/SimpleCumulus_Gradient_10.mat using Guid(0a6a46f3bb9d1444ca868d6ee739340a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5763f9e5c4c4c80f2d7247661ba03c60') in 0.152034 seconds 
-  Import took 0.163923 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000174 seconds.
-  path: Assets/UnityAssets/Environment/SimpleCumulus/Skyboxes/PlainColor/Orange/SimpleCumulus_Orange_04/SimpleCumulus_Orange_04.mat
-  artifactKey: Guid(b22e7d8cc15bb17469eb3c6eb99de99c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UnityAssets/Environment/SimpleCumulus/Skyboxes/PlainColor/Orange/SimpleCumulus_Orange_04/SimpleCumulus_Orange_04.mat using Guid(b22e7d8cc15bb17469eb3c6eb99de99c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'faed0dad363420b42de894d9adb4a91a') in 0.151018 seconds 
-  Import took 0.162716 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000250 seconds.
-  path: Assets/UnityAssets/Environment/SimpleCumulus/Skyboxes/Gradient/SimpleCumulus_Gradient_09/SimpleCumulus_Gradient_09.mat
-  artifactKey: Guid(2cd58da722439c04fb4fc8c4c22e6c15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UnityAssets/Environment/SimpleCumulus/Skyboxes/Gradient/SimpleCumulus_Gradient_09/SimpleCumulus_Gradient_09.mat using Guid(2cd58da722439c04fb4fc8c4c22e6c15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c60bba5d5a9d7f89554159d1a1bb2dd') in 0.150220 seconds 
-  Import took 0.161799 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000220 seconds.
-  path: Assets/UnityAssets/Environment/SimpleCumulus/Skyboxes/PlainColor/Blue/SimpleCumulus_Blue_04/SimpleCumulus_Blue_04.mat
-  artifactKey: Guid(59b8043f54a675941ae9d6d3a01bb9de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UnityAssets/Environment/SimpleCumulus/Skyboxes/PlainColor/Blue/SimpleCumulus_Blue_04/SimpleCumulus_Blue_04.mat using Guid(59b8043f54a675941ae9d6d3a01bb9de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '876cb45a7eba20a013b8c5852d7611a3') in 0.152099 seconds 
-  Import took 0.164067 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001305 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.44 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-2023-12-18 10:14:13.944 Unity[11884:452868] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x7fb96fb8cdf0 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
-Mono: successfully reloaded assembly
-- Completed reload, in  0.897 seconds
-Domain Reload Profiling:
-	ReloadAssembly (897ms)
-		BeginReloadAssembly (101ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (3ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (44ms)
-		EndReloadAssembly (747ms)
-			LoadAssemblies (59ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (272ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (43ms)
-			SetupLoadedEditorAssemblies (280ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (3ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (83ms)
-				ProcessInitializeOnLoadAttributes (183ms)
-				ProcessInitializeOnLoadMethodAttributes (8ms)
-				AfterProcessingInitializeOnLoad (1ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.42 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2081 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 348.3 MB.
-System memory in use after: 346.9 MB.
-
-Unloading 30 unused Assets to reduce memory usage. Loaded Objects now: 2624.
-Total: 3.149199 ms (FindLiveObjects: 0.134630 ms CreateObjectMapping: 0.066210 ms MarkObjects: 1.990175 ms  DeleteObjects: 0.957534 ms)
+Total: 3.865740 ms (FindLiveObjects: 0.152667 ms CreateObjectMapping: 0.076446 ms MarkObjects: 2.035991 ms  DeleteObjects: 1.599838 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
