@@ -26,4 +26,9 @@ public class UIButtons : MonoBehaviour
         SceneManager.LoadScene("Menue.unity");
     }
 
+    public void Level1Scene()
+    {
+        SceneManager.LoadScene("Level 1");
+    }
+
 }

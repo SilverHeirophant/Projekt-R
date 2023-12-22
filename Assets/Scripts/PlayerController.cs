@@ -8,9 +8,9 @@ public class PlayerController : MonoBehaviour
     public float horizontalInput;
     public float verticalInput;
     public int speed = 5;
-    public float thrustMultiplier;
-    public float horizontalMultiplier;
-    public float verticalMultiplier;
+    public GameObject bulletPrefab;
+    Vector3 lookDirection;
+    private BulletBehavior bulletBehavior;
     
     //Private variables
     private float postilt = 25;
@@ -41,6 +41,7 @@ public class PlayerController : MonoBehaviour
         transform.Translate(Vector3.left * verticalInput * speed * Time.deltaTime);
     
         
+        /*
         
         //Makes the player ship tilt on horizontal input value > 0 or < 0
         if (horizontalInput > 0)
@@ -61,10 +62,22 @@ public class PlayerController : MonoBehaviour
 
             Quaternion target = Quaternion.Euler(transform.rotation.x, 90, 90);
             //transform.rotation = Quaternion.RotateTowards(transform.rotation, target, turnWait * Time.deltaTime);
+        
         }
     
-        
+        */
     }
+
+    public void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.CompareTag("Ring"))
+        {
+            ScoreManager.instance.AddScore(1);
+            Destroy(collision.gameObject);
+        }
+    }
+
+
 }
 
 
