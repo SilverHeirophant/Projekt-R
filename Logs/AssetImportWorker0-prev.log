@@ -22,100 +22,100 @@ AssetImportWorker0
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-54317
+59177
 Successfully changed project path to: /Users/computerscience/Desktop/Projekt-R
 Could not lock editor preferences. Preferences updates for this instance of Unity will not be saved./Users/computerscience/Desktop/Projekt-R
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 42.91 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 38.57 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.27f1 (e759542391ea)
 [Subsystems] Discovering subsystems at path /Applications/2020.3.27f1/Unity.app/Contents/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path /Users/computerscience/Desktop/Projekt-R/Assets
 GfxDevice: creating device client; threaded=0
-2023-12-21 09:57:51.980 Unity[40347:1496958] iMac preferred device: AMD Radeon Pro 5500 XT (high power)
-2023-12-21 09:57:51.980 Unity[40347:1496958] Metal devices available: 1
-2023-12-21 09:57:51.980 Unity[40347:1496958] 0: AMD Radeon Pro 5500 XT (high power)
-2023-12-21 09:57:51.980 Unity[40347:1496958] Using device AMD Radeon Pro 5500 XT (high power)
+2023-12-22 13:04:58.062 Unity[51033:1912670] iMac preferred device: AMD Radeon Pro 5500 XT (high power)
+2023-12-22 13:04:58.062 Unity[51033:1912670] Metal devices available: 1
+2023-12-22 13:04:58.062 Unity[51033:1912670] 0: AMD Radeon Pro 5500 XT (high power)
+2023-12-22 13:04:58.063 Unity[51033:1912670] Using device AMD Radeon Pro 5500 XT (high power)
 Initializing Metal device caps: AMD Radeon Pro 5500 XT
 Initialize mono
 Mono path[0] = '/Applications/2020.3.27f1/Unity.app/Contents/Managed'
 Mono path[1] = '/Applications/2020.3.27f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = '/Applications/2020.3.27f1/Unity.app/Contents/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56347
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56033
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: /Applications/2020.3.27f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
-Registered in 0.000389 seconds.
+Registered in 0.002350 seconds.
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 38.41 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 37.40 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.501 seconds
+- Completed reload, in  0.519 seconds
 Domain Reload Profiling:
-	ReloadAssembly (501ms)
-		BeginReloadAssembly (38ms)
+	ReloadAssembly (519ms)
+		BeginReloadAssembly (58ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (404ms)
-			LoadAssemblies (37ms)
+		EndReloadAssembly (401ms)
+			LoadAssemblies (59ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (146ms)
+			SetupTypeCache (144ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (30ms)
-			SetupLoadedEditorAssemblies (157ms)
+			RebuildScriptCaches (29ms)
+			SetupLoadedEditorAssemblies (158ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (3ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (38ms)
-				BeforeProcessingInitializeOnLoad (7ms)
-				ProcessInitializeOnLoadAttributes (85ms)
-				ProcessInitializeOnLoadMethodAttributes (24ms)
+				RefreshPlugins (37ms)
+				BeforeProcessingInitializeOnLoad (6ms)
+				ProcessInitializeOnLoadAttributes (86ms)
+				ProcessInitializeOnLoadMethodAttributes (25ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.001215 seconds.
+Registered in 0.003690 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.43 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.42 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.920 seconds
+- Completed reload, in  0.909 seconds
 Domain Reload Profiling:
-	ReloadAssembly (921ms)
-		BeginReloadAssembly (124ms)
+	ReloadAssembly (909ms)
+		BeginReloadAssembly (119ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (26ms)
-		EndReloadAssembly (747ms)
-			LoadAssemblies (86ms)
+			CreateAndSetChildDomain (23ms)
+		EndReloadAssembly (741ms)
+			LoadAssemblies (74ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (267ms)
+			SetupTypeCache (271ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (47ms)
-			SetupLoadedEditorAssemblies (260ms)
+			SetupLoadedEditorAssemblies (262ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (3ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (46ms)
-				ProcessInitializeOnLoadAttributes (200ms)
-				ProcessInitializeOnLoadMethodAttributes (9ms)
+				BeforeProcessingInitializeOnLoad (44ms)
+				ProcessInitializeOnLoadAttributes (201ms)
+				ProcessInitializeOnLoadMethodAttributes (12ms)
 				AfterProcessingInitializeOnLoad (1ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (5ms)
 Platform modules already initialized, skipping
-Validating Project structure ... 0.019566 seconds.
+Validating Project structure ... 0.017642 seconds.
 Shader import version has changed; will reimport all shaders...
-Upgrading shader files ...0.067664 seconds.
+Upgrading shader files ...0.039637 seconds.
 Application.AssetDatabase Initial Script Refresh Start
 RefreshInfo: InitialScriptRefreshV2(NoUpdateAssetOptions) scanfilter:  ... 1 filters
 RefreshProfiler: Total: 0.000ms
@@ -127,18 +127,18 @@ RefreshProfiler: Total: 0.000ms
 Launching external process: /Applications/2020.3.27f1/Unity.app/Contents/Tools/UnityShaderCompiler
 Launched and connected shader compiler UnityShaderCompiler after 0.01 seconds
 Initializing Unity extensions:
-2023-12-21 09:57:57.242 Unity[40347:1496958] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x7f8c6aa142e0 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
-2023-12-21 09:57:57.246 Unity[40347:1496958] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x7f8c6aa16850 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+2023-12-22 13:05:00.986 Unity[51033:1912670] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x7f7ed61eed10 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+2023-12-22 13:05:00.990 Unity[51033:1912670] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x7f7ed61f1170 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
 ========================================================================
 Worker process is ready to serve import requests
 Refreshing native plugins compatible for Editor in 0.42 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2211 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 131.2 MB.
-System memory in use after: 128.6 MB.
+Unloading 2110 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 124.6 MB.
+System memory in use after: 122.4 MB.
 
-Unloading 182 unused Assets to reduce memory usage. Loaded Objects now: 2685.
-Total: 3.916004 ms (FindLiveObjects: 0.165733 ms CreateObjectMapping: 0.084824 ms MarkObjects: 2.102891 ms  DeleteObjects: 1.562009 ms)
+Unloading 177 unused Assets to reduce memory usage. Loaded Objects now: 2590.
+Total: 3.674100 ms (FindLiveObjects: 0.158790 ms CreateObjectMapping: 0.081655 ms MarkObjects: 2.083954 ms  DeleteObjects: 1.349160 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -152,308 +152,133 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/UnityAssets/UI Resources/Sci-Fi UI/_SciFi_GUISkin_/Bonus_Assets
-  artifactKey: Guid(8c4903477938047558c0f620602a9b6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UnityAssets/UI Resources/Sci-Fi UI/_SciFi_GUISkin_/Bonus_Assets using Guid(8c4903477938047558c0f620602a9b6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7cfbf97786556e01ea806be58946ada6') in 0.005902 seconds 
-  Import took 0.009710 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000154 seconds.
-  path: Assets/UnityAssets/UI Resources/Sci-Fi UI/_SciFi_GUISkin_
-  artifactKey: Guid(c48ee1ef77614481fbadb1839bd750e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UnityAssets/UI Resources/Sci-Fi UI/_SciFi_GUISkin_ using Guid(c48ee1ef77614481fbadb1839bd750e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'febbd7b187746f0ea962e744d69e30ce') in 0.000732 seconds 
-  Import took 0.003393 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.358471 seconds.
-  path: Assets/UnityAssets/UI Resources/Sci-Fi UI/_SciFi_GUISkin_/Bonus_Assets/arrows
-  artifactKey: Guid(9d3e4a89258e94dbb953459cfd0b9ba4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UnityAssets/UI Resources/Sci-Fi UI/_SciFi_GUISkin_/Bonus_Assets/arrows using Guid(9d3e4a89258e94dbb953459cfd0b9ba4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18e8b8baeb300ead7b386c6056f0c600') in 0.000923 seconds 
-  Import took 0.004562 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.604054 seconds.
-  path: Assets/UnityAssets/UI Resources/Sci-Fi UI/Demo_Assets
-  artifactKey: Guid(4cab07b19a2a540319e15f6e1ca02b68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UnityAssets/UI Resources/Sci-Fi UI/Demo_Assets using Guid(4cab07b19a2a540319e15f6e1ca02b68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a3c029877d259581af1b8dbfd520e38') in 0.000941 seconds 
-  Import took 0.004509 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.250850 seconds.
-  path: Assets/UnityAssets/UI Resources/Sci-Fi UI/Demo_Assets/background
-  artifactKey: Guid(7bce7b9567bf449539138c5efb106951) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UnityAssets/UI Resources/Sci-Fi UI/Demo_Assets/background using Guid(7bce7b9567bf449539138c5efb106951) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d70dd1e0796f28136cdce1a53feba6d') in 0.000827 seconds 
-  Import took 0.004168 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 8.176358 seconds.
-  path: Assets/UnityAssets/UI Resources/Sci-Fi UI
-  artifactKey: Guid(c916704bca0114d299b934c96d9ec7cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UnityAssets/UI Resources/Sci-Fi UI using Guid(c916704bca0114d299b934c96d9ec7cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9fed5dc47f94e80600acd556d4731fd4') in 0.000915 seconds 
-  Import took 0.004675 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.447357 seconds.
-  path: Assets/UnityAssets/UI Resources/Sci-Fi UI/_SciFi_GUISkin_/Skin_Assets
-  artifactKey: Guid(c851306008c434a78be667244d3a74ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UnityAssets/UI Resources/Sci-Fi UI/_SciFi_GUISkin_/Skin_Assets using Guid(c851306008c434a78be667244d3a74ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5500fda820dab206058042d147d26c5') in 0.001022 seconds 
-  Import took 0.004912 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.922580 seconds.
-  path: Assets/UnityAssets/UI Resources/Sci-Fi UI/_SciFi_GUISkin_/Skin_Assets/font
-  artifactKey: Guid(23250eed9944744329e85ba8b1636792) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UnityAssets/UI Resources/Sci-Fi UI/_SciFi_GUISkin_/Skin_Assets/font using Guid(23250eed9944744329e85ba8b1636792) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '047c92839a5db1e6d7d797eaaf40f3fd') in 0.000881 seconds 
-  Import took 0.004139 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 20.763628 seconds.
-  path: Assets/UnityAssets/Unity UI Samples/Materials
-  artifactKey: Guid(a5289e1b1e8a120488785ae4de0f89ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UnityAssets/Unity UI Samples/Materials using Guid(a5289e1b1e8a120488785ae4de0f89ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63e7c5f5752845b0b0252b2b94f8f1b8') in 0.000829 seconds 
-  Import took 0.004837 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.055859 seconds.
-  path: Assets/UnityAssets/Unity UI Samples/Materials/Slider Background.mat
-  artifactKey: Guid(27d87a15bf86c4159800770927c9aa2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UnityAssets/Unity UI Samples/Materials/Slider Background.mat using Guid(27d87a15bf86c4159800770927c9aa2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '517c1a967e7fdfc5573767821ca5e39e') in 1.016018 seconds 
-  Import took 1.021811 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000170 seconds.
-  path: Assets/UnityAssets/Unity UI Samples/Materials/UI Opaque.mat
-  artifactKey: Guid(8934f7763af9e41ee8845ae14c5473f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UnityAssets/Unity UI Samples/Materials/UI Opaque.mat using Guid(8934f7763af9e41ee8845ae14c5473f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '655d285a19e12dad5ea8f524aa8967f5') in 0.029314 seconds 
-  Import took 0.032385 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000151 seconds.
-  path: Assets/UnityAssets/Unity UI Samples/Materials/Slider Knob.mat
-  artifactKey: Guid(2ac0972e5f0b5439998e30db4f1ab9c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UnityAssets/Unity UI Samples/Materials/Slider Knob.mat using Guid(2ac0972e5f0b5439998e30db4f1ab9c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '601b7fe5de25ec0c8d40cb314092ed29') in 0.008687 seconds 
-  Import took 0.011722 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000151 seconds.
-  path: Assets/UnityAssets/Unity UI Samples/Materials/Slider Fill.mat
-  artifactKey: Guid(74069a396ef888d4ea96c33784281ac5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UnityAssets/Unity UI Samples/Materials/Slider Fill.mat using Guid(74069a396ef888d4ea96c33784281ac5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '116d76d4e433a4f0cb598ce8a3190967') in 0.011289 seconds 
-  Import took 0.014436 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000161 seconds.
-  path: Assets/UnityAssets/Unity UI Samples/Materials/Window.mat
-  artifactKey: Guid(3cc66b78ab25c204f9b4d415d02e3abe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UnityAssets/Unity UI Samples/Materials/Window.mat using Guid(3cc66b78ab25c204f9b4d415d02e3abe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ffc57bc7eeca8e3dd26621be98461de0') in 0.012174 seconds 
-  Import took 0.015200 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.459465 seconds.
-  path: Assets/UnityAssets/Unity UI Samples/Models
-  artifactKey: Guid(f44d0ca8767b76d43a5e1155e7189c0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UnityAssets/Unity UI Samples/Models using Guid(f44d0ca8767b76d43a5e1155e7189c0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9016602f289a4f0af24cea471bc97213') in 0.000780 seconds 
-  Import took 0.003869 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.081498 seconds.
-  path: Assets/UnityAssets/Unity UI Samples/Models/vehicle_rcFlyer_clean.fbx
-  artifactKey: Guid(dd8c80a5a447f04418da146781b05fd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UnityAssets/Unity UI Samples/Models/vehicle_rcFlyer_clean.fbx using Guid(dd8c80a5a447f04418da146781b05fd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d010d42c585c4d9c65be695a09e4a09') in 0.815993 seconds 
-  Import took 0.822518 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.056473 seconds.
-  path: Assets/UnityAssets/Unity UI Samples/Models/Materials
-  artifactKey: Guid(d8ccdf9e3ac244697bf9b5e32203fa96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UnityAssets/Unity UI Samples/Models/Materials using Guid(d8ccdf9e3ac244697bf9b5e32203fa96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '600f00852fd9e81a286b2d60567bcf35') in 0.000888 seconds 
-  Import took 0.003764 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.083934 seconds.
-  path: Assets/UnityAssets/Unity UI Samples/Models/Materials/vehicle_rcFlyer_dome_mat.mat
-  artifactKey: Guid(27342824cec2ee64ab208b2396c0d82c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UnityAssets/Unity UI Samples/Models/Materials/vehicle_rcFlyer_dome_mat.mat using Guid(27342824cec2ee64ab208b2396c0d82c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ed990585f17381475dc7dcaa0f0aa1d') in 0.008075 seconds 
-  Import took 0.011468 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000150 seconds.
-  path: Assets/UnityAssets/Unity UI Samples/Models/Materials/vehicle_rcLand_clean_dome_mat.mat
-  artifactKey: Guid(5e92155d388358943b88f5fd620cd50a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UnityAssets/Unity UI Samples/Models/Materials/vehicle_rcLand_clean_dome_mat.mat using Guid(5e92155d388358943b88f5fd620cd50a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98e5fa0b2bfc73843fd7de4d2441a2a5') in 0.005301 seconds 
-  Import took 0.008315 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000204 seconds.
-  path: Assets/UnityAssets/Unity UI Samples/Models/Materials/vehicle_rcFlyer_metal_mat.mat
-  artifactKey: Guid(879f5ab2d2a90614db855e052b3e2f20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UnityAssets/Unity UI Samples/Models/Materials/vehicle_rcFlyer_metal_mat.mat using Guid(879f5ab2d2a90614db855e052b3e2f20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f779615a204a6fa881b284f65ce71134') in 0.009414 seconds 
-  Import took 0.012663 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.914778 seconds.
-  path: Assets/UnityAssets/Unity UI Samples/Prefabs
-  artifactKey: Guid(2a148c82c5cc8744a812f2f0f3739664) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UnityAssets/Unity UI Samples/Prefabs using Guid(2a148c82c5cc8744a812f2f0f3739664) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10a47971643ff73a328cfdad88974d0d') in 0.000865 seconds 
-  Import took 0.004219 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.080543 seconds.
-  path: Assets/UnityAssets/Unity UI Samples/Prefabs/SF Button.prefab
-  artifactKey: Guid(05a81c3d5091440058129444d28322f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UnityAssets/Unity UI Samples/Prefabs/SF Button.prefab using Guid(05a81c3d5091440058129444d28322f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f778d04d9a7db30b2d3912589810070f') in 0.072838 seconds 
-  Import took 0.078061 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000199 seconds.
-  path: Assets/UnityAssets/Unity UI Samples/Prefabs/Slider Lit.prefab
-  artifactKey: Guid(1d49f63596dbd412fa2c32ef87fdf2f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UnityAssets/Unity UI Samples/Prefabs/Slider Lit.prefab using Guid(1d49f63596dbd412fa2c32ef87fdf2f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09c87f2f28a15a85ef021b6bb6e3b5aa') in 0.008619 seconds 
-  Import took 0.011883 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000201 seconds.
-  path: Assets/UnityAssets/Unity UI Samples/Prefabs/SF Toggle.prefab
-  artifactKey: Guid(212619aea848509449704f41e4a1d3f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UnityAssets/Unity UI Samples/Prefabs/SF Toggle.prefab using Guid(212619aea848509449704f41e4a1d3f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93b9aa110011bf10de7c17e100adf8f9') in 0.007335 seconds 
-  Import took 0.010536 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000158 seconds.
-  path: Assets/UnityAssets/Unity UI Samples/Prefabs/SF Scene Elements.prefab
-  artifactKey: Guid(7461a7b0cf97947fd9b9e4502fd2d07b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UnityAssets/Unity UI Samples/Prefabs/SF Scene Elements.prefab using Guid(7461a7b0cf97947fd9b9e4502fd2d07b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e75a83023f1571a1b3660b5ca0cba53d') in 0.047541 seconds 
-  Import took 0.050535 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000154 seconds.
-  path: Assets/UnityAssets/Unity UI Samples/Prefabs/SF Slider.prefab
-  artifactKey: Guid(b6a1cf4e3eeaf9a4ca38bf8acb910a6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UnityAssets/Unity UI Samples/Prefabs/SF Slider.prefab using Guid(b6a1cf4e3eeaf9a4ca38bf8acb910a6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1578333c4e3a8cbc38646e96e0ca00c8') in 0.003415 seconds 
-  Import took 0.006370 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000147 seconds.
-  path: Assets/UnityAssets/Unity UI Samples/Prefabs/SF Title.prefab
-  artifactKey: Guid(a93c012dd9ef6454fa7d140e976926f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UnityAssets/Unity UI Samples/Prefabs/SF Title.prefab using Guid(a93c012dd9ef6454fa7d140e976926f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '308e5b1aaa90c72d6184b06e6cfd1325') in 0.004544 seconds 
-  Import took 0.007627 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000148 seconds.
-  path: Assets/UnityAssets/Unity UI Samples/Prefabs/SF Grid Button.prefab
-  artifactKey: Guid(8a0cab5ff0a9b465bbc169d7ad27a67f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UnityAssets/Unity UI Samples/Prefabs/SF Grid Button.prefab using Guid(8a0cab5ff0a9b465bbc169d7ad27a67f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '892c970d8e8b4f9720b6cb8b81d0e5c4') in 0.003729 seconds 
-  Import took 0.006448 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.834620 seconds.
-  path: Assets/UnityAssets/Sci-Fi UI/_SciFi_GUISkin_
-  artifactKey: Guid(06c42dacf407f3641bbd9e9a3fa911eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UnityAssets/Sci-Fi UI/_SciFi_GUISkin_ using Guid(06c42dacf407f3641bbd9e9a3fa911eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21032fc4cb8739e6677d2a78c76f6d34') in 0.000878 seconds 
-  Import took 0.004108 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.077485 seconds.
-  path: Assets/UnityAssets/Sci-Fi UI/_SciFi_GUISkin_/atlas.png
-  artifactKey: Guid(56d84991286850f428b4e7df0cca7380) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UnityAssets/Sci-Fi UI/_SciFi_GUISkin_/atlas.png using Guid(56d84991286850f428b4e7df0cca7380) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ed9bbd604bbf8b89b014bbe88a5ad4f') in 0.575791 seconds 
-  Import took 0.582555 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000235 seconds.
-  path: Assets/UnityAssets/Sci-Fi UI/_SciFi_GUISkin_/SciFi_Skin.guiskin
-  artifactKey: Guid(9705c0e7595e14d42bcd9e476468d8d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UnityAssets/Sci-Fi UI/_SciFi_GUISkin_/SciFi_Skin.guiskin using Guid(9705c0e7595e14d42bcd9e476468d8d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a866506ca1be53e230c13f573614638c') in 0.069355 seconds 
-  Import took 0.074330 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 14.826350 seconds.
-  path: Assets/UnityAssets/Fonts/TextMesh Pro/Fonts/risk-of-rain SDF.asset
-  artifactKey: Guid(7d194179ee9648d4292d7cb84c998510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UnityAssets/Fonts/TextMesh Pro/Fonts/risk-of-rain SDF.asset using Guid(7d194179ee9648d4292d7cb84c998510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89544ec36df4865e1f30959727f2d7bd') in 0.122548 seconds 
-  Import took 0.128190 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 273.716646 seconds.
-  path: Assets/Prefabs/Player.prefab
-  artifactKey: Guid(9580d704ffa454342ab57da0d93be64e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player.prefab using Guid(9580d704ffa454342ab57da0d93be64e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a213a863df6a548e54e5464761845576') in 0.015503 seconds 
-  Import took 0.018927 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 29.646372 seconds.
-  path: Assets/Scenes/Level 1.unity
-  artifactKey: Guid(a38f5f190c49040418baa566d5ab19ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Level 1.unity using Guid(a38f5f190c49040418baa566d5ab19ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '087c0374f97bcd6fa9c6addb70e30fbe') in 0.001929 seconds 
-  Import took 0.005386 seconds .
+  path: Assets/Scripts/ScoreManager.cs
+  artifactKey: Guid(b1f8d39a45f2a9e40924ec848fe20a9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ScoreManager.cs using Guid(b1f8d39a45f2a9e40924ec848fe20a9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8e3da2699194b7442047e4f15bcbc32') in 0.195413 seconds 
+  Import took 0.201190 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.001359 seconds.
+Registered in 0.001987 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.43 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.44 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-2023-12-21 10:04:47.013 Unity[40347:1496958] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x7f8c69bca9f0 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+2023-12-22 13:05:16.344 Unity[51033:1912670] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x7f7ecf9d4830 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
 Mono: successfully reloaded assembly
-- Completed reload, in  0.883 seconds
+- Completed reload, in  0.871 seconds
 Domain Reload Profiling:
-	ReloadAssembly (883ms)
-		BeginReloadAssembly (102ms)
+	ReloadAssembly (872ms)
+		BeginReloadAssembly (98ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (3ms)
+			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (46ms)
-		EndReloadAssembly (732ms)
-			LoadAssemblies (57ms)
+			CreateAndSetChildDomain (41ms)
+		EndReloadAssembly (724ms)
+			LoadAssemblies (60ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (260ms)
+			SetupTypeCache (255ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (41ms)
-			SetupLoadedEditorAssemblies (278ms)
+			RebuildScriptCaches (40ms)
+			SetupLoadedEditorAssemblies (276ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (3ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (82ms)
-				ProcessInitializeOnLoadAttributes (183ms)
+				BeforeProcessingInitializeOnLoad (81ms)
+				ProcessInitializeOnLoadAttributes (182ms)
 				ProcessInitializeOnLoadMethodAttributes (7ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.42 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2084 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 201.0 MB.
+System memory in use after: 199.1 MB.
+
+Unloading 36 unused Assets to reduce memory usage. Loaded Objects now: 2594.
+Total: 3.446922 ms (FindLiveObjects: 0.127128 ms CreateObjectMapping: 0.061477 ms MarkObjects: 2.011977 ms  DeleteObjects: 1.245698 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 15.582174 seconds.
+  path: Assets/Scripts/ScoreManager.cs
+  artifactKey: Guid(b1f8d39a45f2a9e40924ec848fe20a9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ScoreManager.cs using Guid(b1f8d39a45f2a9e40924ec848fe20a9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ff6d47ab64e204df616d655b94e8569') in 0.003713 seconds 
+  Import took 0.005805 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.059445 seconds.
+  path: Assets/Prefabs/Player.prefab
+  artifactKey: Guid(9580d704ffa454342ab57da0d93be64e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player.prefab using Guid(9580d704ffa454342ab57da0d93be64e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6ceaaf481fcd7d146986f02bb710ca9') in 0.668062 seconds 
+  Import took 0.673326 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 93.011656 seconds.
+  path: Assets/Prefabs/Ring.prefab
+  artifactKey: Guid(a37573ad5d3fb7a47997aadbf0976202) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Ring.prefab using Guid(a37573ad5d3fb7a47997aadbf0976202) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b82932f7a783836a03f9ce09a05dd318') in 0.057039 seconds 
+  Import took 0.061142 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.654106 seconds.
+  path: Assets/Prefabs/Ring.prefab
+  artifactKey: Guid(a37573ad5d3fb7a47997aadbf0976202) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Ring.prefab using Guid(a37573ad5d3fb7a47997aadbf0976202) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45b9e41ef732706a388c13c3baf64adc') in 0.008034 seconds 
+  Import took 0.010871 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004445 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.47 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+2023-12-22 13:30:46.157 Unity[51033:1912670] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x7f7ed5c4e920 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+Mono: successfully reloaded assembly
+- Completed reload, in  0.940 seconds
+Domain Reload Profiling:
+	ReloadAssembly (941ms)
+		BeginReloadAssembly (146ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (40ms)
+		EndReloadAssembly (748ms)
+			LoadAssemblies (128ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (250ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (40ms)
+			SetupLoadedEditorAssemblies (285ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (80ms)
+				ProcessInitializeOnLoadAttributes (188ms)
+				ProcessInitializeOnLoadMethodAttributes (12ms)
 				AfterProcessingInitializeOnLoad (1ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
@@ -461,12 +286,12 @@ Domain Reload Profiling:
 Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 0.43 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2162 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 440.9 MB.
-System memory in use after: 438.9 MB.
+Unloading 2084 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 281.4 MB.
+System memory in use after: 279.4 MB.
 
-Unloading 44 unused Assets to reduce memory usage. Loaded Objects now: 2774.
-Total: 4.356551 ms (FindLiveObjects: 0.165320 ms CreateObjectMapping: 0.080788 ms MarkObjects: 2.351046 ms  DeleteObjects: 1.758607 ms)
+Unloading 36 unused Assets to reduce memory usage. Loaded Objects now: 2604.
+Total: 3.457655 ms (FindLiveObjects: 0.151897 ms CreateObjectMapping: 0.062156 ms MarkObjects: 1.917462 ms  DeleteObjects: 1.325518 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -478,12 +303,4 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 45.384530 seconds.
-  path: Assets/Scenes/Level 1.unity
-  artifactKey: Guid(a38f5f190c49040418baa566d5ab19ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Level 1.unity using Guid(a38f5f190c49040418baa566d5ab19ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4b96ff730c84dda3c851c8bd710a691') in 0.011719 seconds 
-  Import took 0.015283 seconds .
-
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file

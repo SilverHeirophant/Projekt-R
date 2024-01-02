@@ -68,9 +68,9 @@ public class PlayerController : MonoBehaviour
         */
     }
 
-    public void OnCollisionEnter(Collision collision)
+    public void OnTriggerEnter(Collider collision)
     {
-        if(collision.gameObject.CompareTag("Ring"))
+        if(collision.gameObject.CompareTag("Rings"))
         {
             ScoreManager.instance.AddScore(1);
             Destroy(collision.gameObject);
