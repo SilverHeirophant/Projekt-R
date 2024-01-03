@@ -7,14 +7,15 @@ public class PlayerController : MonoBehaviour
     //Public variables
     public float horizontalInput;
     public float verticalInput;
-    public int speed = 5;
+    public int speed = 25;
+    public int boost = 30;
     public GameObject bulletPrefab;
     Vector3 lookDirection;
     private BulletBehavior bulletBehavior;
     
     //Private variables
-    private float postilt = 25;
-    private float negTilt = -25;
+    //private float postilt = 25;
+    //private float negTilt = -25;
     //private float turnWait = 1.0f;
     
     
@@ -40,7 +41,10 @@ public class PlayerController : MonoBehaviour
         transform.Translate(Vector3.forward * horizontalInput * speed * Time.deltaTime);
         transform.Translate(Vector3.left * verticalInput * speed * Time.deltaTime);
     
-        
+        if (Input.GetButton("Fire3"))
+        {
+
+        }
         /*
         
         //Makes the player ship tilt on horizontal input value > 0 or < 0
@@ -77,6 +81,10 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    IEnumerator WaitAfterBoost()
+    {
+        print("Boost starts on: " + Time.time);
+    }
 
 }
 
