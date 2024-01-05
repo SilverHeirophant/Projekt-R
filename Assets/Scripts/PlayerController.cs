@@ -7,15 +7,15 @@ public class PlayerController : MonoBehaviour
     //Public variables
     public float horizontalInput;
     public float verticalInput;
-    public float turnSpeed;
-    public int speed = 5;
+    public int speed = 25;
+    public int boost = 5;
     public GameObject bulletPrefab;
     Vector3 lookDirection;
     private BulletBehavior bulletBehavior;
     
     //Private variables
-    private float postilt = 25;
-    private float negTilt = -25;
+    //private float postilt = 25;
+    //private float negTilt = -25;
     //private float turnWait = 1.0f;
     
     
@@ -37,11 +37,18 @@ public class PlayerController : MonoBehaviour
         horizontalInput = Input.GetAxis("Horizontal");
 
         // Movement inputs. Up allows it to move forwards constantly. Intentional. Forward allows it to move up and down and left allows it to move left and right.
-    
+        transform.Translate(Vector3.up * speed * Time.deltaTime);
         transform.Translate(Vector3.forward * horizontalInput * speed * Time.deltaTime);
-        transform.Translate(Vector3.up * verticalInput * speed * Time.deltaTime * turnSpeed);
+        transform.Translate(Vector3.left * verticalInput * speed * Time.deltaTime);
     
-        
+        if (Input.GetButtonDown("Fire3"))
+        {
+            speed = speed + boost;
+        }
+        else if (Input.GetButtonUp("Fire3"))
+        {
+            speed = speed - boost;
+        }
         /*
         
         //Makes the player ship tilt on horizontal input value > 0 or < 0
@@ -69,15 +76,21 @@ public class PlayerController : MonoBehaviour
         */
     }
 
-    public void OnCollisionEnter(Collision collision)
+    public void OnTriggerEnter(Collider collision)
     {
-        if(collision.gameObject.CompareTag("Ring"))
+        if(collision.gameObject.CompareTag("Rings"))
         {
             ScoreManager.instance.AddScore(1);
             Destroy(collision.gameObject);
         }
     }
 
+    IEnumerator WaitAfterBoost()
+    {
+        yield return new WaitForSeconds(5);
+        
+        print("Boost starts on: " + Time.time);
+    }
 
 }
 
