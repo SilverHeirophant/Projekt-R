@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
 	"process_id" : 12084,
+=======
+	"process_id" : 50004,
+>>>>>>> origin/fuckl
 	"version" : "2020.3.27f1",
 	"app_path" : "/Applications/2020.3.27f1/Unity.app",
 	"app_contents_path" : "/Applications/2020.3.27f1/Unity.app/Contents"

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Starting compiling UnityEngine.TestRunner.dll
 /Applications/2020.3.27f1/Unity.app/Contents/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-fbfdb5284b5cd474ca5ca7d563641314
 # Starting compiling UnityEngine.UI.dll
@@ -52,3 +53,7 @@
 /Applications/2020.3.27f1/Unity.app/Contents/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-72de0e8e3b0394a78b92713872934ac2
 # Starting compiling Assembly-CSharp.dll
 /Applications/2020.3.27f1/Unity.app/Contents/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-0798e05b2700048f2b798a54552b6fab
+=======
+# Starting compiling Assembly-CSharp.dll
+/Applications/2020.3.27f1/Unity.app/Contents/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-7da1e07c0f9b447b4a414a9656596534
+>>>>>>> origin/fuckl
