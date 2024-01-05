@@ -8,7 +8,7 @@ public class PlayerController : MonoBehaviour
     public float horizontalInput;
     public float verticalInput;
     public int speed = 25;
-    public int boost = 30;
+    public int boost = 5;
     public GameObject bulletPrefab;
     Vector3 lookDirection;
     private BulletBehavior bulletBehavior;
@@ -41,9 +41,13 @@ public class PlayerController : MonoBehaviour
         transform.Translate(Vector3.forward * horizontalInput * speed * Time.deltaTime);
         transform.Translate(Vector3.left * verticalInput * speed * Time.deltaTime);
     
-        if (Input.GetButton("Fire3"))
+        if (Input.GetButtonDown("Fire3"))
         {
-
+            speed = speed + boost;
+        }
+        else if (Input.GetButtonUp("Fire3"))
+        {
+            speed = speed - boost;
         }
         /*
         
@@ -83,6 +87,8 @@ public class PlayerController : MonoBehaviour
 
     IEnumerator WaitAfterBoost()
     {
+        yield return new WaitForSeconds(5);
+        
         print("Boost starts on: " + Time.time);
     }
 
