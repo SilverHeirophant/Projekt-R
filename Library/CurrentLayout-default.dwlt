@@ -8,6 +8,7 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
+<<<<<<< HEAD
   m_EditorHideFlags: 0
   m_Script: {fileID: 12004, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
@@ -32,6 +33,8 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
+=======
+>>>>>>> origin/Joshua-branch
   m_EditorHideFlags: 1
   m_Script: {fileID: 12004, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
@@ -40,6 +43,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 53
+<<<<<<< HEAD
     width: 2560
     height: 1337
   m_ShowMode: 4
@@ -99,6 +103,17 @@ MonoBehaviour:
   vertical: 0
   controlID: 19
 --- !u!114 &5
+=======
+    width: 2534
+    height: 1262
+  m_ShowMode: 4
+  m_Title: Scene
+  m_RootView: {fileID: 9}
+  m_MinSize: {x: 875, y: 521}
+  m_MaxSize: {x: 10000, y: 10000}
+  m_Maximized: 0
+--- !u!114 &2
+>>>>>>> origin/Joshua-branch
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -113,6 +128,7 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 1427
     y: 0
     width: 717
@@ -122,9 +138,20 @@ MonoBehaviour:
   m_ActualView: {fileID: 24}
   m_Panes:
   - {fileID: 24}
+=======
+    x: 1410
+    y: 0
+    width: 708.5
+    height: 471
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 19}
+  m_Panes:
+  - {fileID: 19}
+>>>>>>> origin/Joshua-branch
   m_Selected: 0
   m_LastSelected: 0
---- !u!114 &6
+--- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -137,11 +164,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
-  - {fileID: 11}
-  - {fileID: 5}
+  - {fileID: 8}
+  - {fileID: 2}
   m_Position:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
     y: 892
     width: 2144
     height: 395
@@ -150,6 +178,16 @@ MonoBehaviour:
   vertical: 0
   controlID: 196
 --- !u!114 &7
+=======
+    y: 741
+    width: 2118.5
+    height: 471
+  m_MinSize: {x: 331, y: 271}
+  m_MaxSize: {x: 14001, y: 10021}
+  vertical: 0
+  controlID: 61
+--- !u!114 &4
+>>>>>>> origin/Joshua-branch
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -166,6 +204,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 416
     height: 413
   m_MinSize: {x: 200, y: 200}
@@ -173,9 +212,18 @@ MonoBehaviour:
   m_ActualView: {fileID: 22}
   m_Panes:
   - {fileID: 22}
+=======
+    width: 415.5
+    height: 388.5
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 17}
+  m_Panes:
+  - {fileID: 17}
+>>>>>>> origin/Joshua-branch
   m_Selected: 0
   m_LastSelected: 0
---- !u!114 &8
+--- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -188,10 +236,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
+  - {fileID: 4}
   - {fileID: 7}
-  - {fileID: 10}
   m_Position:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 2144
     y: 0
     width: 416
@@ -201,6 +250,17 @@ MonoBehaviour:
   vertical: 1
   controlID: 232
 --- !u!114 &9
+=======
+    x: 2118.5
+    y: 0
+    width: 415.5
+    height: 1212
+  m_MinSize: {x: 276, y: 292}
+  m_MaxSize: {x: 4001, y: 8042}
+  vertical: 1
+  controlID: 172
+--- !u!114 &6
+>>>>>>> origin/Joshua-branch
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -213,12 +273,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
-  - {fileID: 15}
-  - {fileID: 8}
+  - {fileID: 12}
+  - {fileID: 5}
   m_Position:
     serializedVersion: 2
     x: 0
     y: 30
+<<<<<<< HEAD
     width: 2560
     height: 1287
   m_MinSize: {x: 609, y: 492}
@@ -226,6 +287,15 @@ MonoBehaviour:
   vertical: 0
   controlID: 194
 --- !u!114 &10
+=======
+    width: 2534
+    height: 1212
+  m_MinSize: {x: 607, y: 471}
+  m_MaxSize: {x: 18002, y: 14021}
+  vertical: 0
+  controlID: 118
+--- !u!114 &7
+>>>>>>> origin/Joshua-branch
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -241,6 +311,7 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
     y: 413
     width: 416
     height: 874
@@ -249,9 +320,19 @@ MonoBehaviour:
   m_ActualView: {fileID: 21}
   m_Panes:
   - {fileID: 21}
+=======
+    y: 388.5
+    width: 415.5
+    height: 823.5
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 16}
+  m_Panes:
+  - {fileID: 16}
+>>>>>>> origin/Joshua-branch
   m_Selected: 0
   m_LastSelected: 0
---- !u!114 &11
+--- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -268,6 +349,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 1427
     height: 395
   m_MinSize: {x: 231, y: 271}
@@ -276,9 +358,19 @@ MonoBehaviour:
   m_Panes:
   - {fileID: 20}
   - {fileID: 19}
+=======
+    width: 1410
+    height: 471
+  m_MinSize: {x: 231, y: 271}
+  m_MaxSize: {x: 10001, y: 10021}
+  m_ActualView: {fileID: 15}
+  m_Panes:
+  - {fileID: 15}
+  - {fileID: 14}
+>>>>>>> origin/Joshua-branch
   m_Selected: 0
   m_LastSelected: 1
---- !u!114 &12
+--- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -291,22 +383,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
-  - {fileID: 13}
-  - {fileID: 9}
-  - {fileID: 14}
+  - {fileID: 10}
+  - {fileID: 6}
+  - {fileID: 11}
   m_Position:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 2560
     height: 1337
   m_MinSize: {x: 875, y: 542}
+=======
+    width: 2534
+    height: 1262
+  m_MinSize: {x: 875, y: 521}
+>>>>>>> origin/Joshua-branch
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
   m_TopViewHeight: 30
   m_UseBottomView: 1
   m_BottomViewHeight: 20
---- !u!114 &13
+--- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -323,15 +421,26 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 2560
+=======
+    width: 2534
+>>>>>>> origin/Joshua-branch
     height: 30
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
   m_LoadedToolbars:
+<<<<<<< HEAD
   - {fileID: 25}
   m_MainToolbar: {fileID: 25}
   m_LastLoadedLayoutName: 
 --- !u!114 &14
+=======
+  - {fileID: 20}
+  m_MainToolbar: {fileID: 20}
+  m_LastLoadedLayoutName: 
+--- !u!114 &11
+>>>>>>> origin/Joshua-branch
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -347,12 +456,17 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
     y: 1317
     width: 2560
+=======
+    y: 1242
+    width: 2534
+>>>>>>> origin/Joshua-branch
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
---- !u!114 &15
+--- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -365,12 +479,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
-  - {fileID: 16}
-  - {fileID: 6}
+  - {fileID: 13}
+  - {fileID: 3}
   m_Position:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 2144
     height: 1287
   m_MinSize: {x: 333, y: 492}
@@ -378,6 +493,15 @@ MonoBehaviour:
   vertical: 1
   controlID: 195
 --- !u!114 &16
+=======
+    width: 2118.5
+    height: 1212
+  m_MinSize: {x: 331, y: 471}
+  m_MaxSize: {x: 14001, y: 14021}
+  vertical: 1
+  controlID: 119
+--- !u!114 &13
+>>>>>>> origin/Joshua-branch
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -394,6 +518,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 2144
     height: 892
   m_MinSize: {x: 201, y: 221}
@@ -405,6 +530,18 @@ MonoBehaviour:
   m_Selected: 0
   m_LastSelected: 1
 --- !u!114 &17
+=======
+    width: 2118.5
+    height: 741
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 18}
+  m_Panes:
+  - {fileID: 18}
+  m_Selected: 0
+  m_LastSelected: 0
+--- !u!114 &14
+>>>>>>> origin/Joshua-branch
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -547,7 +684,11 @@ MonoBehaviour:
     width: 1069
     height: 273
   m_ViewDataDictionary: {fileID: 0}
+<<<<<<< HEAD
 --- !u!114 &20
+=======
+--- !u!114 &15
+>>>>>>> origin/Joshua-branch
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -568,9 +709,15 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
     y: 975
     width: 1426
     height: 374
+=======
+    y: 824
+    width: 1409
+    height: 450
+>>>>>>> origin/Joshua-branch
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -585,14 +732,15 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts
+    - Assets/UnityAssets/GameObjects/10 Airplane Models Pack/Prefabs
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/UnityAssets/GameObjects/10 Airplane Models Pack/Prefabs
   m_LastFoldersGridSize: -1
+<<<<<<< HEAD
   m_LastProjectPath: /Users/computerscience/Desktop/Projekt-R
   m_LockTracker:
     m_IsLocked: 0
@@ -601,6 +749,16 @@ MonoBehaviour:
     m_SelectedIDs: 7a4e0000
     m_LastClickedID: 20090
     m_ExpandedIDs: 00000000844d0000864d0000884d00008a4d00008c4d00008e4d0000904d0000924d0000944d0000964d0000984d00009a4d00009c4d00009e4d0000a04d0000a24d0000a44d0000a64d0000a84d0000aa4d0000ac4d0000ae4d0000b04d0000b24d0000b44d0000b64d0000b84d0000ba4d0000bc4d0000be4d0000c04d0000c24d000000ca9a3b
+=======
+  m_LastProjectPath: /Users/game5/Documents/Projekt-R
+  m_LockTracker:
+    m_IsLocked: 0
+  m_FolderTreeState:
+    scrollPos: {x: 0, y: 134.93134}
+    m_SelectedIDs: c4570000
+    m_LastClickedID: 22468
+    m_ExpandedIDs: 000000006449000066490000684900006a4900006c4900006e49000070490000724900007449000076490000784900007a4900007c4900007e49000080490000824900008449000086490000884900008a4900008c4900008e49000090490000924900009449000096490000984900009a4900009c4900009e490000a0490000a2490000604a00009257000000ca9a3b
+>>>>>>> origin/Joshua-branch
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -616,7 +774,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 11}
+      m_ClientGUIView: {fileID: 8}
     m_SearchString: 
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
@@ -628,7 +786,11 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
+<<<<<<< HEAD
     m_ExpandedIDs: 00000000844d0000864d0000884d00008a4d00008c4d00008e4d0000904d0000924d0000944d0000964d0000984d00009a4d00009c4d00009e4d0000a04d0000a24d0000a44d0000a64d0000a84d0000aa4d0000ac4d0000ae4d0000b04d0000b24d0000b44d0000b64d0000b84d0000ba4d0000bc4d0000be4d0000c04d0000c24d0000
+=======
+    m_ExpandedIDs: 000000006449000066490000684900006a4900006c4900006e49000070490000724900007449000076490000784900007a4900007c4900007e49000080490000824900008449000086490000884900008a4900008c4900008e49000090490000924900009449000096490000984900009a4900009c4900009e490000a0490000a2490000
+>>>>>>> origin/Joshua-branch
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -672,7 +834,11 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
+<<<<<<< HEAD
       m_ClientGUIView: {fileID: 0}
+=======
+      m_ClientGUIView: {fileID: 8}
+>>>>>>> origin/Joshua-branch
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -684,7 +850,11 @@ MonoBehaviour:
     m_GridSize: 64
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 207
+<<<<<<< HEAD
 --- !u!114 &21
+=======
+--- !u!114 &16
+>>>>>>> origin/Joshua-branch
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -704,10 +874,17 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 2144
     y: 496
     width: 415
     height: 853
+=======
+    x: 2118.5
+    y: 471.5
+    width: 414.5
+    height: 802.5
+>>>>>>> origin/Joshua-branch
   m_ViewDataDictionary: {fileID: 0}
   m_ObjectsLockedBeforeSerialization: []
   m_InstanceIDsLockedBeforeSerialization: 
@@ -721,7 +898,11 @@ MonoBehaviour:
   m_LockTracker:
     m_IsLocked: 0
   m_PreviewWindow: {fileID: 0}
+<<<<<<< HEAD
 --- !u!114 &22
+=======
+--- !u!114 &17
+>>>>>>> origin/Joshua-branch
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -741,6 +922,7 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 2144
     y: 83
     width: 415
@@ -752,6 +934,19 @@ MonoBehaviour:
       m_SelectedIDs: 
       m_LastClickedID: 0
       m_ExpandedIDs: 3cf9ffff
+=======
+    x: 2118.5
+    y: 83
+    width: 414.5
+    height: 367.5
+  m_ViewDataDictionary: {fileID: 0}
+  m_SceneHierarchy:
+    m_TreeViewState:
+      scrollPos: {x: 0, y: 22}
+      m_SelectedIDs: 1cdbffff
+      m_LastClickedID: -9444
+      m_ExpandedIDs: b4e7ffff44f1ffff48f7ffff26f8ffff08f9ffffe6f9ffff6cfbffff52560000
+>>>>>>> origin/Joshua-branch
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -767,7 +962,7 @@ MonoBehaviour:
         m_IsRenaming: 0
         m_OriginalEventType: 11
         m_IsRenamingFilename: 0
-        m_ClientGUIView: {fileID: 16}
+        m_ClientGUIView: {fileID: 0}
       m_SearchString: 
     m_ExpandedScenes: []
     m_CurrenRootInstanceID: 0
@@ -775,7 +970,11 @@ MonoBehaviour:
       m_IsLocked: 0
     m_CurrentSortingName: TransformSorting
   m_WindowGUID: 4c969a2b90040154d917609493e03593
+<<<<<<< HEAD
 --- !u!114 &23
+=======
+--- !u!114 &18
+>>>>>>> origin/Joshua-branch
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -797,8 +996,13 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 83
+<<<<<<< HEAD
     width: 2143
     height: 871
+=======
+    width: 2117.5
+    height: 720
+>>>>>>> origin/Joshua-branch
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 1
   m_WindowGUID: cc27987af1a868c49b0894db9c0f5429
@@ -811,9 +1015,15 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
+<<<<<<< HEAD
     m_Target: {x: 2.9923983, y: 48.346992, z: 117.0148}
     speed: 2
     m_Value: {x: 2.9923983, y: 48.346992, z: 117.0148}
+=======
+    m_Target: {x: 540.81775, y: -146.5861, z: 1761.6093}
+    speed: 2
+    m_Value: {x: 540.81775, y: -146.5861, z: 1761.6093}
+>>>>>>> origin/Joshua-branch
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -860,6 +1070,7 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
+<<<<<<< HEAD
     m_Target: {x: -0.17247066, y: -0.026014743, z: 0.0045318506, w: -0.98466676}
     speed: 2
     m_Value: {x: -0.17246963, y: -0.026014589, z: 0.0045318236, w: -0.9846609}
@@ -867,13 +1078,27 @@ MonoBehaviour:
     m_Target: 27.4692
     speed: 2
     m_Value: 27.4692
+=======
+    m_Target: {x: 0.17344876, y: 0.6224091, z: -0.144014, w: 0.7495281}
+    speed: 2
+    m_Value: {x: 0.17344789, y: 0.622406, z: -0.14401329, w: 0.74952435}
+  m_Size:
+    m_Target: 43.408875
+    speed: 2
+    m_Value: 46.58651
+>>>>>>> origin/Joshua-branch
   m_Ortho:
     m_Target: 0
     speed: 2
     m_Value: 0
   m_CameraSettings:
+<<<<<<< HEAD
     m_Speed: 1.8025525
     m_SpeedNormalized: 0.9012268
+=======
+    m_Speed: 1.9570911
+    m_SpeedNormalized: 0.9785348
+>>>>>>> origin/Joshua-branch
     m_SpeedMin: 0.001
     m_SpeedMax: 2
     m_EasingEnabled: 1
@@ -891,7 +1116,11 @@ MonoBehaviour:
   m_SceneVisActive: 1
   m_LastLockedObject: {fileID: 0}
   m_ViewIsLockedToObject: 0
+<<<<<<< HEAD
 --- !u!114 &24
+=======
+--- !u!114 &19
+>>>>>>> origin/Joshua-branch
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -911,12 +1140,21 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 1427
     y: 975
     width: 715
     height: 374
   m_ViewDataDictionary: {fileID: 0}
 --- !u!114 &25
+=======
+    x: 1410
+    y: 824
+    width: 706.5
+    height: 450
+  m_ViewDataDictionary: {fileID: 0}
+--- !u!114 &20
+>>>>>>> origin/Joshua-branch
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
