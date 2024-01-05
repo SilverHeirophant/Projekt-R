@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour
     //Public variables
     public float horizontalInput;
     public float verticalInput;
+    public float turnSpeed;
     public int speed = 5;
     public GameObject bulletPrefab;
     Vector3 lookDirection;
@@ -36,9 +37,9 @@ public class PlayerController : MonoBehaviour
         horizontalInput = Input.GetAxis("Horizontal");
 
         // Movement inputs. Up allows it to move forwards constantly. Intentional. Forward allows it to move up and down and left allows it to move left and right.
-        transform.Translate(Vector3.up * speed * Time.deltaTime);
+    
         transform.Translate(Vector3.forward * horizontalInput * speed * Time.deltaTime);
-        transform.Translate(Vector3.left * verticalInput * speed * Time.deltaTime);
+        transform.Translate(Vector3.up * verticalInput * speed * Time.deltaTime * turnSpeed);
     
         
         /*
