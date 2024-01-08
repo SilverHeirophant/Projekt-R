@@ -18,7 +18,7 @@ public class PlayerController : MonoBehaviour
 
     //Boost Thingies
     public int maxBoost;
-    public int currentBoost;
+    public float currentBoost;
     public Boost BBar;
 
     //Transforms
@@ -67,12 +67,13 @@ public class PlayerController : MonoBehaviour
         if (Input.GetButton("Fire3"))
         {
             StartCoroutine(WaitAfterBoost(0.2f));
-            SpentBoost(10);
+            SpentBoost(0.1f);
 
         }
         else if (Input.GetButtonUp("Fire3"))
         {
             speed = speed - boost;
+            StartCoroutine(GetBoost(2));
         }
         
         
@@ -115,12 +116,18 @@ public class PlayerController : MonoBehaviour
         HBar.SetHealth(currentHealth);
     }
     
-    void SpentBoost(int ridBoost)
+    void SpentBoost(float ridBoost)
     {
         currentBoost -= ridBoost;
-        BBar.SetBoost(currentBoost);
+        BBar.SetBoost((int)currentBoost);
     }
     
+    void AddBoost(float addBoost)
+    {
+        currentBoost += addBoost;
+        BBar.SetBoost((int)currentBoost);
+    }
+
     public void OnTriggerEnter(Collider collision)
     {
         if(collision.gameObject.CompareTag("Rings"))
@@ -138,7 +145,16 @@ public class PlayerController : MonoBehaviour
             yield return new WaitForSeconds(delay);
         }
     }
-
+    
+    public IEnumerator GetBoost(float value)
+    {
+        while (Input.GetButtonUp("Fire3"))
+        {
+            AddBoost(5);
+            yield return new WaitForSeconds(value);
+        }
+    }
+    
 }
 
 
