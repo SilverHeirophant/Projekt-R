@@ -5,26 +5,48 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     //Public variables
+    //Movement variables
     public float horizontalInput;
     public float verticalInput;
     public int speed = 25;
     public int boost = 5;
+    
+    //Health Bar thingies
+    public int maxHealth;
+    public int currentHealth;
+    public Health HBar;
+
+    //Boost Thingies
+    public int maxBoost;
+    public int currentBoost;
+    public Boost BBar;
+
+    //Transforms
     public GameObject bulletPrefab;
     Vector3 lookDirection;
-    private BulletBehavior bulletBehavior;
+    
     
     //Private variables
+    private BulletBehavior bulletBehavior;
+    private Rigidbody playerRb;
+
+    //Holdon
     //private float postilt = 25;
     //private float negTilt = -25;
     //private float turnWait = 1.0f;
     
-    
-    private Rigidbody playerRb;
-    
-    // Start is called before the first frame update
     void Awake()
     {
         playerRb = GetComponent<Rigidbody>();
+    }
+
+    void Start()
+    {
+        //Starts the game with both sliders fully loaded
+        currentHealth = maxHealth;
+        currentBoost = maxBoost;
+        HBar.SetMaxHealth(maxHealth);
+        BBar.SetMaxBoost(maxBoost);
     }
 
     // Update is called once per frame
@@ -41,16 +63,20 @@ public class PlayerController : MonoBehaviour
         transform.Translate(Vector3.forward * horizontalInput * speed * Time.deltaTime);
         transform.Translate(Vector3.left * verticalInput * speed * Time.deltaTime);
     
-        if (Input.GetButtonDown("Fire3"))
+        //If the player presses shift, they will receive a "boost". It only adds 5 to the current speed
+        if (Input.GetButton("Fire3"))
         {
-            speed = speed + boost;
+            StartCoroutine(WaitAfterBoost(0.2f));
+            SpentBoost(10);
+
         }
         else if (Input.GetButtonUp("Fire3"))
         {
             speed = speed - boost;
         }
-        /*
         
+        
+        /* Work in progress honestly
         //Makes the player ship tilt on horizontal input value > 0 or < 0
         if (horizontalInput > 0)
         {
@@ -72,10 +98,29 @@ public class PlayerController : MonoBehaviour
             //transform.rotation = Quaternion.RotateTowards(transform.rotation, target, turnWait * Time.deltaTime);
         
         }
-    
         */
-    }
+        
 
+        //Testing the healthbar xd
+        if (Input.GetKeyDown(KeyCode.K))
+        {
+            TakeDamage(10);
+        }
+
+    }
+    //also testing the health bar :p
+    void TakeDamage(int damage)
+    {
+        currentHealth -= damage;
+        HBar.SetHealth(currentHealth);
+    }
+    
+    void SpentBoost(int ridBoost)
+    {
+        currentBoost -= ridBoost;
+        BBar.SetBoost(currentBoost);
+    }
+    
     public void OnTriggerEnter(Collider collision)
     {
         if(collision.gameObject.CompareTag("Rings"))
@@ -85,11 +130,13 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    IEnumerator WaitAfterBoost()
+    public IEnumerator WaitAfterBoost(float delay)
     {
-        yield return new WaitForSeconds(5);
-        
-        print("Boost starts on: " + Time.time);
+        while (Input.GetButtonDown("Fire3"))
+        {
+            currentBoost--;
+            yield return new WaitForSeconds(delay);
+        }
     }
 
 }
