@@ -49,6 +49,7 @@ public class PlayerController : MonoBehaviour
         BBar.SetMaxBoost(maxBoost);
     }
 
+
     // Update is called once per frame
     void Update()
     {
@@ -73,33 +74,8 @@ public class PlayerController : MonoBehaviour
         else if (Input.GetButtonUp("Fire3"))
         {
             speed = speed - boost;
-            StartCoroutine(GetBoost(2));
+            //StartCoroutine(GetBoost(2));
         }
-        
-        
-        /* Work in progress honestly
-        //Makes the player ship tilt on horizontal input value > 0 or < 0
-        if (horizontalInput > 0)
-        {
-            transform.Rotate(Vector3.up * negTilt * Time.deltaTime, Space.Self);
-            transform.Rotate(Vector3.up * 25 * Time.deltaTime, Space.World);
-            //Debug.Log("turning right");
-
-            Quaternion target = Quaternion.Euler(transform.rotation.x, 90, 90);
-            //transform.rotation = Quaternion.RotateTowards(transform.rotation, target, turnWait * Time.deltaTime);
-        }
-
-        if (horizontalInput < 0)
-        {
-            transform.Rotate(Vector3.up * postilt * Time.deltaTime, Space.Self);
-            transform.Rotate(Vector3.up * -25 * Time.deltaTime, Space.World);
-            //Debug.Log("turning left");
-
-            Quaternion target = Quaternion.Euler(transform.rotation.x, 90, 90);
-            //transform.rotation = Quaternion.RotateTowards(transform.rotation, target, turnWait * Time.deltaTime);
-        
-        }
-        */
         
 
         //Testing the healthbar xd
