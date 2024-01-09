@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Steering : MonoBehaviour
 {
+    /*
     // Start is called before the first frame update
     void Start()
     {
@@ -66,5 +67,5 @@ public class Steering : MonoBehaviour
         var torque = Rigidbody.AddRelativeTorque(torque * Mathf.Deg2Rad);
     }
 
-
+*/
 }
