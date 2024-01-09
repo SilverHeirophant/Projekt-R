@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 ﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"m_AlwaysRefresh":false,"showFog":true,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true,"showVisualEffectGraphs":true,"m_FxEnabled":true},"in2DMode":false,"pivot":{"x":1001.81591796875,"y":111.16748046875,"z":2184.687255859375},"rotation":{"x":0.10357111692428589,"y":0.03131888806819916,"z":-0.0032640136778354646,"w":0.9941211342811585},"size":1410.34619140625,"orthographic":false}
+=======
+﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"m_AlwaysRefresh":false,"showFog":true,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true,"showVisualEffectGraphs":true,"m_FxEnabled":true},"in2DMode":false,"pivot":{"x":1288.975830078125,"y":63.16238021850586,"z":714.9354248046875},"rotation":{"x":-0.4773007333278656,"y":0.07940829545259476,"z":-0.043365128338336948,"w":-0.8740907907485962},"size":0.8660253882408142,"orthographic":false}
+>>>>>>> origin/Joshua-branch

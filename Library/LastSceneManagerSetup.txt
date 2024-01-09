@@ -1,5 +1,9 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/Earth.unity
+=======
+- path: Assets/Scenes/Level 2.unity
+>>>>>>> origin/Joshua-branch
   isLoaded: 1
   isActive: 1
   isSubScene: 0
