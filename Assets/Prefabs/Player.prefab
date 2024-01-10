@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4753104869912159664}
   - component: {fileID: 4340574105254652006}
   - component: {fileID: 4340574105254652005}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -142,6 +142,7 @@ MonoBehaviour:
   MainHUD: {fileID: 0}
   MissionComplete: {fileID: 0}
   bulletPrefab: {fileID: 1825870777587358, guid: 9568f15e6607c70469b5b2657c7cd0b3, type: 3}
+  throwforce: 0
 --- !u!1001 &6774244427199587284
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -211,7 +212,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2455815966334982200, guid: 75e2fe22d0b3e244a8d1db165bf2ce54, type: 3}
       propertyPath: m_Layer
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 75e2fe22d0b3e244a8d1db165bf2ce54, type: 3}
