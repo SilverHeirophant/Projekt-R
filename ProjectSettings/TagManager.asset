@@ -7,11 +7,14 @@ TagManager:
   - TrackingObject
   - Actors
   - Rings
+  - Enemy
+  - Ping
+  - Bullet
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Player
   - Water
   - UI
   - 
