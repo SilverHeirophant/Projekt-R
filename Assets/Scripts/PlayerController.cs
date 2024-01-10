@@ -36,7 +36,7 @@ public class PlayerController : MonoBehaviour
     public float throwforce;
 
     //Private variables
-    private BulletBehavior bulletBehavior;
+    //private BulletBehavior bulletBehavior;
     private Rigidbody playerRb;
     private Quaternion targetRotation;
 
