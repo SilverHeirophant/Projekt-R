@@ -6,10 +6,17 @@ using TMPro;
 
 public class ScoreManager : MonoBehaviour
 {
+    //Level 1 Ring Scoring System
     public static ScoreManager instance;
     public TextMeshProUGUI scoreText;
     public TextMeshProUGUI numberScore;
+    
+    //Level 2 downed enemies scoring system
+    public TextMeshProUGUI maxEnemiesFallen;
+    public TextMeshProUGUI currentEnemiesKilled;
+    
     private int score = 0;
+    private int enemyScore = 5;
     
     //Initializing the instance of score before the game starts
     private void Awake()
@@ -29,4 +36,12 @@ public class ScoreManager : MonoBehaviour
         scoreText.text = "Score: " + score.ToString();
     }
 
+    /*
+    public void SubEnemyScore(int scoreToSub)
+    {
+        enemyScore -= scoreToSub;
+        enemyScore.text = "Enemies Left" + enemyScore.ToString();
+    }
+
+*/
 }

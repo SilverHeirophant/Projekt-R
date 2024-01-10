@@ -129,15 +129,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   horizontalInput: 0
   verticalInput: 0
-  speed: 25
-  boost: 5
+  smooth: 1
+  speed: 30
+  boost: 10
   maxHealth: 100
   currentHealth: 100
   HBar: {fileID: 0}
   maxBoost: 50
   currentBoost: 50
   BBar: {fileID: 0}
-  bulletPrefab: {fileID: 4701092073061956407, guid: 56fc4239c929dec44bb4f551f2c12e59, type: 3}
+  Dialogue: {fileID: 0}
+  MainHUD: {fileID: 0}
+  MissionComplete: {fileID: 0}
+  bulletPrefab: {fileID: 1825870777587358, guid: 9568f15e6607c70469b5b2657c7cd0b3, type: 3}
 --- !u!1001 &6774244427199587284
 PrefabInstance:
   m_ObjectHideFlags: 0

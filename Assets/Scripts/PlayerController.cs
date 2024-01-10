@@ -8,8 +8,9 @@ public class PlayerController : MonoBehaviour
     //Movement variables
     public float horizontalInput;
     public float verticalInput;
-    public int speed = 25;
-    public int boost = 5;
+    public float smooth = 1f;
+    public int speed;
+    public int boost;
     
     //Health Bar thingies
     public int maxHealth;
@@ -21,14 +22,23 @@ public class PlayerController : MonoBehaviour
     public float currentBoost;
     public Boost BBar;
 
+    [SerializeField] GameObject Dialogue;
+    
+    [SerializeField] GameObject MainHUD;
+    [SerializeField] GameObject MissionComplete;
+
+    //public PingDirection pingDirection;
+
     //Transforms
     public GameObject bulletPrefab;
     Vector3 lookDirection;
     
-    
+    public float throwforce;
+
     //Private variables
     private BulletBehavior bulletBehavior;
     private Rigidbody playerRb;
+    private Quaternion targetRotation;
 
     //Holdon
     //private float postilt = 25;
@@ -37,6 +47,7 @@ public class PlayerController : MonoBehaviour
     
     void Awake()
     {
+        Time.timeScale = 0;
         playerRb = GetComponent<Rigidbody>();
     }
 
@@ -47,14 +58,19 @@ public class PlayerController : MonoBehaviour
         currentBoost = maxBoost;
         HBar.SetMaxHealth(maxHealth);
         BBar.SetMaxBoost(maxBoost);
+        //pingDirection = gameObject.GetComponent<PingDetection>();
+
+        Dialogue.SetActive(true);
+        MainHUD.SetActive(false);
+        MissionComplete.SetActive(false);
+
+        targetRotation = transform.rotation;
     }
 
 
     // Update is called once per frame
     void Update()
     {
-        playerRb = GetComponent<Rigidbody>();
-
         //Establishing wasd movement
         verticalInput = Input.GetAxis("Vertical");
         horizontalInput = Input.GetAxis("Horizontal");
@@ -63,18 +79,31 @@ public class PlayerController : MonoBehaviour
         transform.Translate(Vector3.up * speed * Time.deltaTime);
         transform.Translate(Vector3.forward * horizontalInput * speed * Time.deltaTime);
         transform.Translate(Vector3.left * verticalInput * speed * Time.deltaTime);
-    
-        //If the player presses shift, they will receive a "boost". It only adds 5 to the current speed
-        if (Input.GetButton("Fire3"))
+
+        if (Input.GetKeyDown(KeyCode.J))
         {
+            targetRotation *= Quaternion.AngleAxis(15, Vector3.left);
+        }
+    
+        if (Input.GetKeyDown(KeyCode.L))
+        {
+            targetRotation *= Quaternion.AngleAxis(15, Vector3.right);
+        }
+            transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, 10 * smooth * Time.deltaTime);
+
+        //If the player presses shift, they will receive a "boost". It only adds 5 to the current speed
+        if (Input.GetButtonDown("Fire3"))
+        {
+            speed = speed + boost;
+            
             StartCoroutine(WaitAfterBoost(0.2f));
             SpentBoost(0.1f);
-
         }
-        else if (Input.GetButtonUp("Fire3"))
+        
+        if (Input.GetButtonUp("Fire3"))
         {
-            speed = speed - boost;
-            //StartCoroutine(GetBoost(2));
+            speed = 30;
+            AddBoost(maxBoost);
         }
         
 
@@ -84,6 +113,15 @@ public class PlayerController : MonoBehaviour
             TakeDamage(10);
         }
 
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Dialogue.SetActive(false);
+
+            Time.timeScale = 1;
+            MainHUD.SetActive(true);
+        }
+    
+    
     }
     //also testing the health bar :p
     void TakeDamage(int damage)
@@ -98,7 +136,7 @@ public class PlayerController : MonoBehaviour
         BBar.SetBoost((int)currentBoost);
     }
     
-    void AddBoost(float addBoost)
+    void AddBoost(int addBoost)
     {
         currentBoost += addBoost;
         BBar.SetBoost((int)currentBoost);
@@ -111,6 +149,16 @@ public class PlayerController : MonoBehaviour
             ScoreManager.instance.AddScore(1);
             Destroy(collision.gameObject);
         }
+    
+        if (collision.gameObject.CompareTag("Ping"))
+        {
+            Time.timeScale = 0;
+            
+            MissionComplete.SetActive(true);
+            MainHUD.SetActive(false);
+            Dialogue.SetActive(false);
+        }
+    
     }
 
     public IEnumerator WaitAfterBoost(float delay)
@@ -126,11 +174,25 @@ public class PlayerController : MonoBehaviour
     {
         while (Input.GetButtonUp("Fire3"))
         {
-            AddBoost(5);
-            yield return new WaitForSeconds(value);
+            AddBoost(maxBoost);
+            yield return new WaitForSeconds(10);
         }
     }
-    
+
+    private void ShootBullet()
+    {
+        if (Input.GetButtonDown("Fire1"))
+        {
+            bulletPrefab = Instantiate(bulletPrefab, transform.position, bulletPrefab.transform.rotation);
+            Instantiate(bulletPrefab, transform.position, bulletPrefab.transform.rotation);
+            
+            Rigidbody bulletPrefab = bulletPrefab.GetComponent<Rigidbody>();
+            bulletPrefab.AddForce(throwforce * Vector3.forward, ForceMode.Impulse);
+
+        }
+    }
+
+
 }
 
 
