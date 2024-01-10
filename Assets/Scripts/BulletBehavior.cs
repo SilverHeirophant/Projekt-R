@@ -6,70 +6,52 @@ using TMPro;
 public class BulletBehavior : MonoBehaviour
 {
 //Bulleto :)
-    public GameObject bullet;
-    public float shootForce;
-    public float upwardForce;
+    [SerializeField]
+    float damage;
+    [SerializeField]
+    float lifetime;
+    [SerializeField]
+    float speed;
+    [SerializeField]
+    LayerMask collisionMask;
+    [SerializeField]
+    float width;
 
-//Ship Gun variables
-    public float timeBetweenShots;
-    public float spread;
-    public float reloadTime;
-    public float timeBetweenShooting;
-    
-//ints used
-    public int magazineSize;
-    public int bulletsPerTap;
-    public int bulletsLeft;
-    public int bulletsShot;
+    Plane owner;
+    new Rigidbody rigidbody;
+    Vector3 lastPosition;
+    float startTime;
 
-//Bools used
-    public bool allowButtonHold;
-    public bool shooting;
-    public bool readyToShoot;
-    public bool reloading;
+    public void Fire(Plane owner) {
+        this.owner = owner;
+        rigidbody = GetComponent<Rigidbody>();
+        startTime = Time.time;
 
-    private void Awake()
-    {
-        //Check for the magazine. ie; how full it is
-        bulletsLeft = magazineSize;
-        readyToShoot = true;
+        rigidbody.AddRelativeForce(new Vector3(0, 0, speed), ForceMode.VelocityChange);
+        rigidbody.AddForce(owner.Rigidbody.velocity, ForceMode.VelocityChange);
+        lastPosition = rigidbody.position;
     }
 
-    void Update()
-    {
-        PlayerInput();
-    }
-    
-    private void PlayerInput()
-    {
-        //Check if player is allowed to hold down ;v
-        if (allowButtonHold)
-        {
-            shooting = Input.GetKey(KeyCode.F);
+    void FixedUpdate() {
+        if (Time.time > startTime + lifetime) {
+            Destroy(gameObject);
+            return;
         }
-    
-        else
-        {
-            shooting = Input.GetKeyDown(KeyCode.F);
+
+        var diff = rigidbody.position - lastPosition;
+        lastPosition = rigidbody.position;
+
+        Ray ray = new Ray(lastPosition, diff.normalized);
+        RaycastHit hit;
+
+        if (Physics.SphereCast(ray, width, out hit, diff.magnitude, collisionMask.value)) {
+            Plane other = hit.collider.GetComponent<Plane>();
+
+            if (other != null && other != owner) {
+                other.ApplyDamage(damage);
+            }
+
+            Destroy(gameObject);
         }
-    
-    //Shooting Logic
-        if (readyToShoot && shooting && !reloading && bulletsLeft > 0)
-        {
-            bulletsShot = 0;
-
-            Shoot();
-        }
-    
-    
     }
-
-    private void Shoot()
-    {
-        readyToShoot = false;
-        bulletsLeft--;
-        bulletsShot++;
-    }
-
-
 }

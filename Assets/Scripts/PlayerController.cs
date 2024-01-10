@@ -179,6 +179,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    /*
     private void ShootBullet()
     {
         if (Input.GetButtonDown("Fire1"))
@@ -191,7 +192,7 @@ public class PlayerController : MonoBehaviour
 
         }
     }
-
+*/
 
 }
 

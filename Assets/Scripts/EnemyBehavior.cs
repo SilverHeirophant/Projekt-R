@@ -1,6 +1,9 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.Windows;
 
 public class EnemyBehavior : MonoBehaviour
 {
@@ -12,7 +15,7 @@ public class EnemyBehavior : MonoBehaviour
     public Health HP;
     public GameObject bulletPrefab;
 
-    private Rigidbody rigidbody;
+    public Rigidbody rigidbody;
     private bool playerDetection;
     
     // Start is called before the first frame update
