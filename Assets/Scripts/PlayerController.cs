@@ -5,32 +5,72 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     //Public variables
+    //Movement variables
     public float horizontalInput;
     public float verticalInput;
-    public int speed = 5;
-    public float thrustMultiplier;
-    public float horizontalMultiplier;
-    public float verticalMultiplier;
+    public float smooth = 1f;
+    public int speed;
+    public int boost;
     
+    //Health Bar thingies
+    public int maxHealth;
+    public int currentHealth;
+    public Health HBar;
+
+    //Boost Thingies
+    public int maxBoost;
+    public float currentBoost;
+    public Boost BBar;
+
+    [SerializeField] GameObject Dialogue;
+    
+    [SerializeField] GameObject MainHUD;
+    [SerializeField] GameObject MissionComplete;
+
+    //public PingDirection pingDirection;
+
+    //Transforms
+    public GameObject bulletPrefab;
+    Vector3 lookDirection;
+    
+    public float throwforce;
+
     //Private variables
-    private float postilt = 25;
-    private float negTilt = -25;
+    //private BulletBehavior bulletBehavior;
+    private Rigidbody playerRb;
+    private Quaternion targetRotation;
+
+    //Holdon
+    //private float postilt = 25;
+    //private float negTilt = -25;
     //private float turnWait = 1.0f;
     
-    
-    private Rigidbody playerRb;
-    
-    // Start is called before the first frame update
     void Awake()
     {
+        Time.timeScale = 0;
         playerRb = GetComponent<Rigidbody>();
     }
+
+    void Start()
+    {
+        //Starts the game with both sliders fully loaded
+        currentHealth = maxHealth;
+        currentBoost = maxBoost;
+        HBar.SetMaxHealth(maxHealth);
+        BBar.SetMaxBoost(maxBoost);
+        //pingDirection = gameObject.GetComponent<PingDetection>();
+
+        Dialogue.SetActive(true);
+        MainHUD.SetActive(false);
+        MissionComplete.SetActive(false);
+
+        targetRotation = transform.rotation;
+    }
+
 
     // Update is called once per frame
     void Update()
     {
-        playerRb = GetComponent<Rigidbody>();
-
         //Establishing wasd movement
         verticalInput = Input.GetAxis("Vertical");
         horizontalInput = Input.GetAxis("Horizontal");
@@ -39,32 +79,121 @@ public class PlayerController : MonoBehaviour
         transform.Translate(Vector3.up * speed * Time.deltaTime);
         transform.Translate(Vector3.forward * horizontalInput * speed * Time.deltaTime);
         transform.Translate(Vector3.left * verticalInput * speed * Time.deltaTime);
-    
-        
-        
-        //Makes the player ship tilt on horizontal input value > 0 or < 0
-        if (horizontalInput > 0)
+
+        if (Input.GetKeyDown(KeyCode.J))
         {
-            transform.Rotate(Vector3.up * negTilt * Time.deltaTime, Space.Self);
-            transform.Rotate(Vector3.up * 25 * Time.deltaTime, Space.World);
-            //Debug.Log("turning right");
-
-            Quaternion target = Quaternion.Euler(transform.rotation.x, 90, 90);
-            //transform.rotation = Quaternion.RotateTowards(transform.rotation, target, turnWait * Time.deltaTime);
-        }
-
-        if (horizontalInput < 0)
-        {
-            transform.Rotate(Vector3.up * postilt * Time.deltaTime, Space.Self);
-            transform.Rotate(Vector3.up * -25 * Time.deltaTime, Space.World);
-            //Debug.Log("turning left");
-
-            Quaternion target = Quaternion.Euler(transform.rotation.x, 90, 90);
-            //transform.rotation = Quaternion.RotateTowards(transform.rotation, target, turnWait * Time.deltaTime);
+            targetRotation *= Quaternion.AngleAxis(15, Vector3.left);
         }
     
+        if (Input.GetKeyDown(KeyCode.L))
+        {
+            targetRotation *= Quaternion.AngleAxis(15, Vector3.right);
+        }
+            transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, 10 * smooth * Time.deltaTime);
+
+        //If the player presses shift, they will receive a "boost". It only adds 5 to the current speed
+        if (Input.GetButtonDown("Fire3"))
+        {
+            speed = speed + boost;
+            
+            StartCoroutine(WaitAfterBoost(0.2f));
+            SpentBoost(0.1f);
+        }
         
+        if (Input.GetButtonUp("Fire3"))
+        {
+            speed = 30;
+            AddBoost(maxBoost);
+        }
+        
+
+        //Testing the healthbar xd
+        if (Input.GetKeyDown(KeyCode.K))
+        {
+            TakeDamage(10);
+        }
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Dialogue.SetActive(false);
+
+            Time.timeScale = 1;
+            MainHUD.SetActive(true);
+        }
+    
+    
     }
+    //also testing the health bar :p
+    void TakeDamage(int damage)
+    {
+        currentHealth -= damage;
+        HBar.SetHealth(currentHealth);
+    }
+    
+    void SpentBoost(float ridBoost)
+    {
+        currentBoost -= ridBoost;
+        BBar.SetBoost((int)currentBoost);
+    }
+    
+    void AddBoost(int addBoost)
+    {
+        currentBoost += addBoost;
+        BBar.SetBoost((int)currentBoost);
+    }
+
+    public void OnTriggerEnter(Collider collision)
+    {
+        if(collision.gameObject.CompareTag("Rings"))
+        {
+            ScoreManager.instance.AddScore(1);
+            Destroy(collision.gameObject);
+        }
+    
+        if (collision.gameObject.CompareTag("Ping"))
+        {
+            Time.timeScale = 0;
+            
+            MissionComplete.SetActive(true);
+            MainHUD.SetActive(false);
+            Dialogue.SetActive(false);
+        }
+    
+    }
+
+    public IEnumerator WaitAfterBoost(float delay)
+    {
+        while (Input.GetButtonDown("Fire3"))
+        {
+            currentBoost--;
+            yield return new WaitForSeconds(delay);
+        }
+    }
+    
+    public IEnumerator GetBoost(float value)
+    {
+        while (Input.GetButtonUp("Fire3"))
+        {
+            AddBoost(maxBoost);
+            yield return new WaitForSeconds(10);
+        }
+    }
+
+    /*
+    private void ShootBullet()
+    {
+        if (Input.GetButtonDown("Fire1"))
+        {
+            bulletPrefab = Instantiate(bulletPrefab, transform.position, bulletPrefab.transform.rotation);
+            Instantiate(bulletPrefab, transform.position, bulletPrefab.transform.rotation);
+            
+            Rigidbody bulletPrefab = bulletPrefab.GetComponent<Rigidbody>();
+            bulletPrefab.AddForce(throwforce * Vector3.forward, ForceMode.Impulse);
+
+        }
+    }
+*/
+
 }
 
 
