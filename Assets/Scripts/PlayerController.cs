@@ -46,6 +46,12 @@ namespace UnityStandardAssets.Vehicles.Aeroplane
 
         public float horizontalInput;
     public float verticalInput;
+<<<<<<< Updated upstream
+=======
+    public float smooth = 1f;
+    public float maxRollAngle = 80;
+    public float maxPitchAngle = 80;
+>>>>>>> Stashed changes
     public int speed;
     public int boost;
     

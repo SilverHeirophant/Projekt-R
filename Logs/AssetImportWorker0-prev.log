@@ -22,25 +22,41 @@ AssetImportWorker0
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
+<<<<<<< Updated upstream
 49389
 Successfully changed project path to: /Users/game5/Documents/Projekt-R
 Could not lock editor preferences. Preferences updates for this instance of Unity will not be saved./Users/game5/Documents/Projekt-R
 Using Asset Import Pipeline V2.
 Refreshing native plugins compatible for Editor in 42.66 ms, found 2 plugins.
+=======
+56758
+Successfully changed project path to: /Users/computerscience/Desktop/Projekt-R
+Could not lock editor preferences. Preferences updates for this instance of Unity will not be saved./Users/computerscience/Desktop/Projekt-R
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 43.12 ms, found 2 plugins.
+>>>>>>> Stashed changes
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.27f1 (e759542391ea)
 [Subsystems] Discovering subsystems at path /Applications/2020.3.27f1/Unity.app/Contents/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path /Users/game5/Documents/Projekt-R/Assets
 GfxDevice: creating device client; threaded=0
+<<<<<<< Updated upstream
 2024-01-16 13:32:00.410 Unity[15620:85442429] iMac preferred device: AMD Radeon Pro 5500 XT (high power)
 2024-01-16 13:32:00.410 Unity[15620:85442429] Metal devices available: 1
 2024-01-16 13:32:00.411 Unity[15620:85442429] 0: AMD Radeon Pro 5500 XT (high power)
 2024-01-16 13:32:00.411 Unity[15620:85442429] Using device AMD Radeon Pro 5500 XT (high power)
+=======
+2024-02-02 13:53:50.481 Unity[16168:517881] iMac preferred device: AMD Radeon Pro 5500 XT (high power)
+2024-02-02 13:53:50.481 Unity[16168:517881] Metal devices available: 1
+2024-02-02 13:53:50.481 Unity[16168:517881] 0: AMD Radeon Pro 5500 XT (high power)
+2024-02-02 13:53:50.481 Unity[16168:517881] Using device AMD Radeon Pro 5500 XT (high power)
+>>>>>>> Stashed changes
 Initializing Metal device caps: AMD Radeon Pro 5500 XT
 Initialize mono
 Mono path[0] = '/Applications/2020.3.27f1/Unity.app/Contents/Managed'
 Mono path[1] = '/Applications/2020.3.27f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = '/Applications/2020.3.27f1/Unity.app/Contents/MonoBleedingEdge/etc'
+<<<<<<< Updated upstream
 Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56620
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
@@ -54,11 +70,27 @@ Mono: successfully reloaded assembly
 Domain Reload Profiling:
 	ReloadAssembly (538ms)
 		BeginReloadAssembly (42ms)
+=======
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56168
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: /Applications/2020.3.27f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Registered in 0.000390 seconds.
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 38.47 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.500 seconds
+Domain Reload Profiling:
+	ReloadAssembly (500ms)
+		BeginReloadAssembly (37ms)
+>>>>>>> Stashed changes
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
+<<<<<<< Updated upstream
 		EndReloadAssembly (430ms)
 			LoadAssemblies (41ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
@@ -66,19 +98,34 @@ Domain Reload Profiling:
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (33ms)
 			SetupLoadedEditorAssemblies (165ms)
+=======
+		EndReloadAssembly (404ms)
+			LoadAssemblies (37ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (145ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (30ms)
+			SetupLoadedEditorAssemblies (158ms)
+>>>>>>> Stashed changes
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
+				InitializePlatformSupportModulesInManaged (3ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (38ms)
 				BeforeProcessingInitializeOnLoad (7ms)
+<<<<<<< Updated upstream
 				ProcessInitializeOnLoadAttributes (90ms)
 				ProcessInitializeOnLoadMethodAttributes (26ms)
+=======
+				ProcessInitializeOnLoadAttributes (85ms)
+				ProcessInitializeOnLoadMethodAttributes (24ms)
+>>>>>>> Stashed changes
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
+<<<<<<< Updated upstream
 Registered in 0.001241 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for OSXStandalone target not found
@@ -89,10 +136,23 @@ Mono: successfully reloaded assembly
 Domain Reload Profiling:
 	ReloadAssembly (959ms)
 		BeginReloadAssembly (133ms)
+=======
+Registered in 0.001251 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.43 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.888 seconds
+Domain Reload Profiling:
+	ReloadAssembly (890ms)
+		BeginReloadAssembly (121ms)
+>>>>>>> Stashed changes
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
+<<<<<<< Updated upstream
 			CreateAndSetChildDomain (25ms)
 		EndReloadAssembly (771ms)
 			LoadAssemblies (67ms)
@@ -101,21 +161,42 @@ Domain Reload Profiling:
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (50ms)
 			SetupLoadedEditorAssemblies (267ms)
+=======
+			CreateAndSetChildDomain (23ms)
+		EndReloadAssembly (719ms)
+			LoadAssemblies (65ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (263ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (47ms)
+			SetupLoadedEditorAssemblies (258ms)
+>>>>>>> Stashed changes
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (3ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (0ms)
+<<<<<<< Updated upstream
 				BeforeProcessingInitializeOnLoad (46ms)
 				ProcessInitializeOnLoadAttributes (206ms)
+=======
+				BeforeProcessingInitializeOnLoad (45ms)
+				ProcessInitializeOnLoadAttributes (200ms)
+>>>>>>> Stashed changes
 				ProcessInitializeOnLoadMethodAttributes (8ms)
 				AfterProcessingInitializeOnLoad (1ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (7ms)
 Platform modules already initialized, skipping
+<<<<<<< Updated upstream
 Validating Project structure ... 0.017413 seconds.
 Shader import version has changed; will reimport all shaders...
 Upgrading shader files ...0.036763 seconds.
+=======
+Validating Project structure ... 0.017112 seconds.
+Shader import version has changed; will reimport all shaders...
+Upgrading shader files ...0.037711 seconds.
+>>>>>>> Stashed changes
 Application.AssetDatabase Initial Script Refresh Start
 RefreshInfo: InitialScriptRefreshV2(NoUpdateAssetOptions) scanfilter:  ... 1 filters
 RefreshProfiler: Total: 0.000ms
@@ -127,16 +208,30 @@ RefreshProfiler: Total: 0.000ms
 Launching external process: /Applications/2020.3.27f1/Unity.app/Contents/Tools/UnityShaderCompiler
 Launched and connected shader compiler UnityShaderCompiler after 0.01 seconds
 Initializing Unity extensions:
+<<<<<<< Updated upstream
+=======
+2024-02-02 13:53:56.197 Unity[16168:517881] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x7fec1c8042b0 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+2024-02-02 13:53:56.201 Unity[16168:517881] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x7fec1c806710 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+>>>>>>> Stashed changes
 ========================================================================
 Worker process is ready to serve import requests
 Refreshing native plugins compatible for Editor in 0.43 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
+<<<<<<< Updated upstream
 Unloading 2114 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 224.3 MB.
 System memory in use after: 221.8 MB.
 
 Unloading 181 unused Assets to reduce memory usage. Loaded Objects now: 2595.
 Total: 3.787371 ms (FindLiveObjects: 0.162241 ms CreateObjectMapping: 0.084898 ms MarkObjects: 2.181543 ms  DeleteObjects: 1.358074 ms)
+=======
+Unloading 2113 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 124.8 MB.
+System memory in use after: 122.7 MB.
+
+Unloading 180 unused Assets to reduce memory usage. Loaded Objects now: 2594.
+Total: 3.691362 ms (FindLiveObjects: 0.161183 ms CreateObjectMapping: 0.085114 ms MarkObjects: 2.103856 ms  DeleteObjects: 1.340553 ms)
+>>>>>>> Stashed changes
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -150,6 +245,7 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
+<<<<<<< Updated upstream
   path: Assets/Prefabs/Terrain_A.prefab
   artifactKey: Guid(15a77f36da2644e53beea098434a029e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Prefabs/Terrain_A.prefab using Guid(15a77f36da2644e53beea098434a029e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef1f86eeca9e54e190bb80055fff7d6a') in 0.849428 seconds 
@@ -299,4 +395,76 @@ Received Import Request.
 Start importing Assets/Prefabs/Enemy.prefab using Guid(e2622949d8ae920409fd73d82281eac2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65858a17d9c64fab5a533ecfccaee0cd') in 0.018622 seconds 
   Import took 0.021619 seconds .
 
+=======
+  path: Assets/Scripts
+  artifactKey: Guid(69ff94722e26d45c588142f69e06fe31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts using Guid(69ff94722e26d45c588142f69e06fe31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3c0ffafd3aaebdf29eb997fbb824bd8') in 0.003115 seconds 
+  Import took 0.005272 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 93.861854 seconds.
+  path: Assets/Scripts/Plane.cs
+  artifactKey: Guid(22a86f21b905649bba15cd41c72e2ebb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Plane.cs using Guid(22a86f21b905649bba15cd41c72e2ebb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '069da06e907f9a5396b2166738d0f375') in 0.180422 seconds 
+  Import took 0.186116 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001224 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.47 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+2024-02-02 13:55:34.640 Unity[16168:517881] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x7fec17479380 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+Mono: successfully reloaded assembly
+- Completed reload, in  0.890 seconds
+Domain Reload Profiling:
+	ReloadAssembly (891ms)
+		BeginReloadAssembly (102ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (46ms)
+		EndReloadAssembly (739ms)
+			LoadAssemblies (59ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (264ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (42ms)
+			SetupLoadedEditorAssemblies (279ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (83ms)
+				ProcessInitializeOnLoadAttributes (182ms)
+				ProcessInitializeOnLoadMethodAttributes (7ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.43 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2088 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 201.0 MB.
+System memory in use after: 199.1 MB.
+
+Unloading 36 unused Assets to reduce memory usage. Loaded Objects now: 2599.
+Total: 3.409315 ms (FindLiveObjects: 0.130869 ms CreateObjectMapping: 0.063675 ms MarkObjects: 1.965759 ms  DeleteObjects: 1.248418 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+>>>>>>> Stashed changes
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
