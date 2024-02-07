@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: 4aaf758f847a615459e3d3e300bee993, type: 2}
+  m_SkyboxMaterial: {fileID: 2100000, guid: f53e1b8b9cc164a41b538bbc5c9c7771, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.6111655, g: 0.5547334, b: 0.6512325, a: 1}
+  m_IndirectSpecularColor: {r: 0.48316282, g: 0.5280332, b: 0.5973567, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1235,7 +1235,7 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 0.7075472, g: 0.56403524, b: 0.56829447, a: 1}
+  m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
   m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
@@ -8765,8 +8765,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreText: {fileID: 720866343}
   numberScore: {fileID: 1456039979}
-  maxEnemiesFallen: {fileID: 0}
-  currentEnemiesKilled: {fileID: 0}
 --- !u!4 &1003100324
 Transform:
   m_ObjectHideFlags: 0
@@ -12940,8 +12938,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreText: {fileID: 720866343}
   numberScore: {fileID: 1456039979}
-  maxEnemiesFallen: {fileID: 0}
-  currentEnemiesKilled: {fileID: 0}
 --- !u!4 &2007987239
 Transform:
   m_ObjectHideFlags: 0
@@ -13746,20 +13742,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7757843412681522318, guid: 25694d1d9ff3c4283aa4997e252571e0, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7757843412681522318, guid: 25694d1d9ff3c4283aa4997e252571e0, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: -0.000000029802322
       objectReference: {fileID: 0}
     - target: {fileID: 7757843412681522318, guid: 25694d1d9ff3c4283aa4997e252571e0, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: -0.000000029802322
       objectReference: {fileID: 0}
     - target: {fileID: 7757843412681522318, guid: 25694d1d9ff3c4283aa4997e252571e0, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0.000000014901161
       objectReference: {fileID: 0}
     - target: {fileID: 7757843412681522319, guid: 25694d1d9ff3c4283aa4997e252571e0, type: 3}
       propertyPath: m_Follow
@@ -13787,19 +13779,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7757843412714083432, guid: 25694d1d9ff3c4283aa4997e252571e0, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9608152
+      value: 0.96070606
       objectReference: {fileID: 0}
     - target: {fileID: 7757843412714083432, guid: 25694d1d9ff3c4283aa4997e252571e0, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.20401154
+      value: 0.20452511
       objectReference: {fileID: 0}
     - target: {fileID: 7757843412714083432, guid: 25694d1d9ff3c4283aa4997e252571e0, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.18356025
+      value: 0.18353933
       objectReference: {fileID: 0}
     - target: {fileID: 7757843412714083432, guid: 25694d1d9ff3c4283aa4997e252571e0, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.03897566
+      value: -0.039073758
       objectReference: {fileID: 0}
     - target: {fileID: 7757843412714083432, guid: 25694d1d9ff3c4283aa4997e252571e0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
