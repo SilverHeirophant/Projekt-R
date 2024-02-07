@@ -24,6 +24,7 @@ Logs/AssetImportWorker0.log
 -srvPort
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 52043
 Successfully changed project path to: /Users/game5/Documents/Projekt-R
@@ -51,11 +52,19 @@ Could not lock editor preferences. Preferences updates for this instance of Unit
 Using Asset Import Pipeline V2.
 Refreshing native plugins compatible for Editor in 42.66 ms, found 2 plugins.
 >>>>>>> parent of 0640f05f (Save marker)
+=======
+49389
+Successfully changed project path to: /Users/game5/Documents/Projekt-R
+Could not lock editor preferences. Preferences updates for this instance of Unity will not be saved./Users/game5/Documents/Projekt-R
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 42.66 ms, found 2 plugins.
+>>>>>>> parent of 0640f05f (Save marker)
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.27f1 (e759542391ea)
 [Subsystems] Discovering subsystems at path /Applications/2020.3.27f1/Unity.app/Contents/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path /Users/game5/Documents/Projekt-R/Assets
 GfxDevice: creating device client; threaded=0
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< Updated upstream
@@ -72,11 +81,16 @@ GfxDevice: creating device client; threaded=0
 =======
 =======
 >>>>>>> parent of 0640f05f (Save marker)
+=======
+>>>>>>> parent of 0640f05f (Save marker)
 2024-01-16 13:32:00.410 Unity[15620:85442429] iMac preferred device: AMD Radeon Pro 5500 XT (high power)
 2024-01-16 13:32:00.410 Unity[15620:85442429] Metal devices available: 1
 2024-01-16 13:32:00.411 Unity[15620:85442429] 0: AMD Radeon Pro 5500 XT (high power)
 2024-01-16 13:32:00.411 Unity[15620:85442429] Using device AMD Radeon Pro 5500 XT (high power)
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of 0640f05f (Save marker)
+=======
 >>>>>>> parent of 0640f05f (Save marker)
 =======
 >>>>>>> parent of 0640f05f (Save marker)
@@ -87,8 +101,12 @@ Mono path[1] = '/Applications/2020.3.27f1/Unity.app/Contents/MonoBleedingEdge/li
 Mono config path = '/Applications/2020.3.27f1/Unity.app/Contents/MonoBleedingEdge/etc'
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56287
+=======
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56620
+>>>>>>> parent of 0640f05f (Save marker)
 =======
 Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56620
 >>>>>>> parent of 0640f05f (Save marker)
@@ -100,6 +118,7 @@ Registering precompiled unity dll's ...
 Register platform support module: /Applications/2020.3.27f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
 Registered in 0.000407 seconds.
 Native extension for OSXStandalone target not found
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 Refreshing native plugins compatible for Editor in 37.72 ms, found 2 plugins.
@@ -118,10 +137,14 @@ Refreshing native plugins compatible for Editor in 37.74 ms, found 2 plugins.
 =======
 Refreshing native plugins compatible for Editor in 37.74 ms, found 2 plugins.
 >>>>>>> parent of 0640f05f (Save marker)
+=======
+Refreshing native plugins compatible for Editor in 37.74 ms, found 2 plugins.
+>>>>>>> parent of 0640f05f (Save marker)
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
 - Completed reload, in  0.537 seconds
 Domain Reload Profiling:
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< Updated upstream
@@ -139,11 +162,16 @@ Domain Reload Profiling:
 	ReloadAssembly (538ms)
 		BeginReloadAssembly (42ms)
 >>>>>>> parent of 0640f05f (Save marker)
+=======
+	ReloadAssembly (538ms)
+		BeginReloadAssembly (42ms)
+>>>>>>> parent of 0640f05f (Save marker)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< Updated upstream
@@ -154,10 +182,14 @@ Domain Reload Profiling:
 =======
 		EndReloadAssembly (430ms)
 >>>>>>> parent of 0640f05f (Save marker)
+=======
+		EndReloadAssembly (430ms)
+>>>>>>> parent of 0640f05f (Save marker)
 			LoadAssemblies (41ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
 			SetupTypeCache (160ms)
 			ReleaseScriptCaches (0ms)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 			RebuildScriptCaches (34ms)
@@ -179,11 +211,16 @@ Domain Reload Profiling:
 			RebuildScriptCaches (33ms)
 			SetupLoadedEditorAssemblies (165ms)
 >>>>>>> parent of 0640f05f (Save marker)
+=======
+			RebuildScriptCaches (33ms)
+			SetupLoadedEditorAssemblies (165ms)
+>>>>>>> parent of 0640f05f (Save marker)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (37ms)
 				BeforeProcessingInitializeOnLoad (7ms)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< Updated upstream
@@ -201,6 +238,10 @@ Domain Reload Profiling:
 				ProcessInitializeOnLoadAttributes (90ms)
 				ProcessInitializeOnLoadMethodAttributes (26ms)
 >>>>>>> parent of 0640f05f (Save marker)
+=======
+				ProcessInitializeOnLoadAttributes (90ms)
+				ProcessInitializeOnLoadMethodAttributes (26ms)
+>>>>>>> parent of 0640f05f (Save marker)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
@@ -209,8 +250,12 @@ Platform modules already initialized, skipping
 Registering precompiled user dll's ...
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 Registered in 0.001406 seconds.
+=======
+Registered in 0.001241 seconds.
+>>>>>>> parent of 0640f05f (Save marker)
 =======
 Registered in 0.001241 seconds.
 >>>>>>> parent of 0640f05f (Save marker)
@@ -224,6 +269,7 @@ Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
 - Completed reload, in  0.959 seconds
 Domain Reload Profiling:
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 	ReloadAssembly (977ms)
@@ -248,10 +294,15 @@ Domain Reload Profiling:
 	ReloadAssembly (959ms)
 		BeginReloadAssembly (133ms)
 >>>>>>> parent of 0640f05f (Save marker)
+=======
+	ReloadAssembly (959ms)
+		BeginReloadAssembly (133ms)
+>>>>>>> parent of 0640f05f (Save marker)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< Updated upstream
@@ -273,6 +324,11 @@ Domain Reload Profiling:
 		EndReloadAssembly (771ms)
 			LoadAssemblies (67ms)
 >>>>>>> parent of 0640f05f (Save marker)
+=======
+			CreateAndSetChildDomain (25ms)
+		EndReloadAssembly (771ms)
+			LoadAssemblies (67ms)
+>>>>>>> parent of 0640f05f (Save marker)
 			RebuildTransferFunctionScriptingTraits (0ms)
 			SetupTypeCache (290ms)
 			ReleaseScriptCaches (0ms)
@@ -284,9 +340,14 @@ Domain Reload Profiling:
 				RefreshPlugins (0ms)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 				BeforeProcessingInitializeOnLoad (49ms)
 				ProcessInitializeOnLoadAttributes (207ms)
+=======
+				BeforeProcessingInitializeOnLoad (46ms)
+				ProcessInitializeOnLoadAttributes (206ms)
+>>>>>>> parent of 0640f05f (Save marker)
 =======
 				BeforeProcessingInitializeOnLoad (46ms)
 				ProcessInitializeOnLoadAttributes (206ms)
@@ -308,6 +369,7 @@ Domain Reload Profiling:
 Platform modules already initialized, skipping
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 Validating Project structure ... 0.017369 seconds.
 Shader import version has changed; will reimport all shaders...
@@ -317,6 +379,11 @@ Validating Project structure ... 0.018035 seconds.
 Shader import version has changed; will reimport all shaders...
 Upgrading shader files ...0.041328 seconds.
 >>>>>>> Stashed changes
+=======
+Validating Project structure ... 0.017413 seconds.
+Shader import version has changed; will reimport all shaders...
+Upgrading shader files ...0.036763 seconds.
+>>>>>>> parent of 0640f05f (Save marker)
 =======
 Validating Project structure ... 0.017413 seconds.
 Shader import version has changed; will reimport all shaders...
@@ -350,6 +417,7 @@ System memory in use after: 221.8 MB.
 Unloading 181 unused Assets to reduce memory usage. Loaded Objects now: 2595.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 Total: 4.108686 ms (FindLiveObjects: 0.177706 ms CreateObjectMapping: 0.092274 ms MarkObjects: 2.402140 ms  DeleteObjects: 1.435558 ms)
 =======
 2024-02-06 13:27:31.216 Unity[34229:1160321] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x7f9a1802eb50 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
@@ -371,6 +439,9 @@ Total: 3.787371 ms (FindLiveObjects: 0.162241 ms CreateObjectMapping: 0.084898 m
 =======
 Total: 3.787371 ms (FindLiveObjects: 0.162241 ms CreateObjectMapping: 0.084898 ms MarkObjects: 2.181543 ms  DeleteObjects: 1.358074 ms)
 >>>>>>> parent of 0640f05f (Save marker)
+=======
+Total: 3.787371 ms (FindLiveObjects: 0.162241 ms CreateObjectMapping: 0.084898 ms MarkObjects: 2.181543 ms  DeleteObjects: 1.358074 ms)
+>>>>>>> parent of 0640f05f (Save marker)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -386,6 +457,7 @@ AssetImportParameters requested are different than current active one (requested
 Received Import Request.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   path: Assets/Scenes/Level 1.unity
   artifactKey: Guid(a38f5f190c49040418baa566d5ab19ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
@@ -394,11 +466,16 @@ Start importing Assets/Scenes/Level 1.unity using Guid(a38f5f190c49040418baa566d
 =======
 =======
 >>>>>>> parent of 0640f05f (Save marker)
+=======
+>>>>>>> parent of 0640f05f (Save marker)
   path: Assets/Prefabs/Terrain_A.prefab
   artifactKey: Guid(15a77f36da2644e53beea098434a029e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Prefabs/Terrain_A.prefab using Guid(15a77f36da2644e53beea098434a029e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef1f86eeca9e54e190bb80055fff7d6a') in 0.849428 seconds 
   Import took 0.854682 seconds .
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of 0640f05f (Save marker)
+=======
 >>>>>>> parent of 0640f05f (Save marker)
 =======
 >>>>>>> parent of 0640f05f (Save marker)
@@ -503,6 +580,7 @@ Start importing Assets/Prefabs/Enemy.prefab using Guid(e2622949d8ae920409fd73d82
 Received Import Request.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   Time since last request: 55.844761 seconds.
   path: Assets/Prefabs/textures/New Render Texture.renderTexture
   artifactKey: Guid(ddb4a285c407e46c985ecfd7829e17a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
@@ -532,6 +610,16 @@ Start importing Assets/Prefabs/Enemy.prefab using Guid(e2622949d8ae920409fd73d82
 
 ========================================================================
 Received Import Request.
+=======
+  Time since last request: 6.859377 seconds.
+  path: Assets/Prefabs/Enemy.prefab
+  artifactKey: Guid(e2622949d8ae920409fd73d82281eac2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enemy.prefab using Guid(e2622949d8ae920409fd73d82281eac2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b886ca0ee3b8fc95d198296413cb429') in 0.010944 seconds 
+  Import took 0.013951 seconds .
+
+========================================================================
+Received Import Request.
+>>>>>>> parent of 0640f05f (Save marker)
 =======
   Time since last request: 6.859377 seconds.
   path: Assets/Prefabs/Enemy.prefab
