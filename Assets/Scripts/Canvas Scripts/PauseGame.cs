@@ -10,12 +10,14 @@ public class PauseGame : MonoBehaviour
     [SerializeField] GameObject PauseButton;
     [SerializeField] GameObject MissionMenu;
     [SerializeField] GameObject Mission1UI;
+    [SerializeField] GameObject Mission2UI;
     
     void Start()
     {
         //true ones || Earth
         PauseMenu.SetActive(false);
         Mission1UI.SetActive(false);
+        Mission2UI.SetActive(false);
         //false ones
         MissionMenu.SetActive(true);
         
@@ -47,6 +49,11 @@ public class PauseGame : MonoBehaviour
     {
         MissionMenu.SetActive(false);
         Mission1UI.SetActive(true);
+    }
+
+    public void Mission2UISpawn(){
+        MissionMenu.SetActive(false);
+        Mission2UI.SetActive(true);
     }
 
 }

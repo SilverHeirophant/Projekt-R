@@ -78,6 +78,7 @@ public class PlayerController : MonoBehaviour
         // Movement inputs. Up allows it to move forwards constantly. Intentional. Forward allows it to move up and down and left allows it to move left and right.
         transform.Translate(Vector3.up * speed * Time.deltaTime);
         
+        /*
         //Makes the player ship tilt on horizontal input value > 0 or < 0
         if (horizontalInput > 0)
         {
@@ -106,11 +107,10 @@ public class PlayerController : MonoBehaviour
 
         
         
-        /*
+        */
         transform.Translate(Vector3.forward * horizontalInput * speed * Time.deltaTime);
         transform.Translate(Vector3.left * verticalInput * speed * Time.deltaTime);
 
-        */
         if (Input.GetKeyDown(KeyCode.J))
         {
             targetRotation *= Quaternion.AngleAxis(15, Vector3.left);
