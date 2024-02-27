@@ -44,6 +44,7 @@ public class PlayerController : MonoBehaviour
     private float postilt = 45;
     private float negTilt = -45;
     private float turnWait = 1.0f;
+    private int Enemies = 5;
     
     void Awake()
     {
