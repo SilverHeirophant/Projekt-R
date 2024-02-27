@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.041091345, g: 0.07253561, b: 0.12543699, a: 1}
+  m_IndirectSpecularColor: {r: 0.04108902, g: 0.07253326, b: 0.12543514, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2643,7 +2643,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 1.430027, y: 2.8600008}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -4156,6 +4156,8 @@ MonoBehaviour:
   numberScore: {fileID: 1384106843}
   EnemiesLeft: {fileID: 874339249}
   currentEnemiesKilled: {fileID: 1384106843}
+  MainHUD: {fileID: 1100133634}
+  MissionComplete: {fileID: 1318900168}
 --- !u!4 &1063024674
 Transform:
   m_ObjectHideFlags: 0
@@ -4364,11 +4366,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '"Great job fighter, I knew I could count on you."
+  m_text: '"Hope you''re not too hurt"
 
 
-    "Now, report back
-    to base and I''ll we''ll discuss the details here"'
+    "Come by the mechanic to fix your jet
+    if you need!"'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7d194179ee9648d4292d7cb84c998510, type: 2}
   m_sharedMaterial: {fileID: -3690926902457784388, guid: 7d194179ee9648d4292d7cb84c998510, type: 2}
@@ -4431,7 +4433,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -166.07819, y: 0, z: -317.96387, w: -96.28436}
+  m_margin: {x: -166.07819, y: 0, z: -317.96387, w: -69.530945}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -4720,7 +4722,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1100133635
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4737,6 +4739,8 @@ MonoBehaviour:
   numberScore: {fileID: 1384106843}
   EnemiesLeft: {fileID: 0}
   currentEnemiesKilled: {fileID: 0}
+  MainHUD: {fileID: 0}
+  MissionComplete: {fileID: 0}
 --- !u!4 &1100133636
 Transform:
   m_ObjectHideFlags: 0
@@ -4786,7 +4790,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 1.430027, y: 2.8600008}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -4985,7 +4989,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1081224992}
         m_TargetAssemblyTypeName: UIButtons, Assembly-CSharp
         m_MethodName: BackToMenu
         m_Mode: 1
@@ -5265,7 +5269,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1318900169
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5611,7 +5615,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1081224992}
         m_TargetAssemblyTypeName: UIButtons, Assembly-CSharp
         m_MethodName: EarthScene
         m_Mode: 1
@@ -7767,6 +7771,7 @@ MonoBehaviour:
   smooth: 1
   speed: 15
   boost: 0
+  scoreManager: {fileID: 0}
   maxHealth: 100
   currentHealth: 100
   HBar: {fileID: 452966316}
@@ -8162,7 +8167,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7757843412681522318, guid: 25694d1d9ff3c4283aa4997e252571e0, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 6.984919e-10
+      value: 4.6566123e-10
       objectReference: {fileID: 0}
     - target: {fileID: 7757843412681522318, guid: 25694d1d9ff3c4283aa4997e252571e0, type: 3}
       propertyPath: m_LocalRotation.z
@@ -8202,11 +8207,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7757843412714083432, guid: 25694d1d9ff3c4283aa4997e252571e0, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.0031721543
+      value: -0.0031721173
       objectReference: {fileID: 0}
     - target: {fileID: 7757843412714083432, guid: 25694d1d9ff3c4283aa4997e252571e0, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.00067354995
+      value: 0.0006735421
       objectReference: {fileID: 0}
     - target: {fileID: 7757843412714083432, guid: 25694d1d9ff3c4283aa4997e252571e0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

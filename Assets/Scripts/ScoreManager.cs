@@ -14,10 +14,12 @@ public class ScoreManager : MonoBehaviour
     //Level 2 downed enemies scoring system
     public TextMeshProUGUI EnemiesLeft;
     public TextMeshProUGUI currentEnemiesKilled;
+    [SerializeField] GameObject MainHUD;
+    [SerializeField] GameObject MissionComplete;
     
     private int score2 = 0;
     private int score = 0;
-    private int enemies = 5;
+    private int maxPoints = 5;
     
     //Initializing the instance of score before the game starts
     private void Awake()
@@ -44,7 +46,17 @@ public class ScoreManager : MonoBehaviour
     {
         score2 += points;
         EnemiesLeft.text = "Enemies Left: " + score2.ToString();
+
+        if(score2 == maxPoints){
+            EndOfTheGame();
+        }
+    
     }
 
+    void EndOfTheGame(){
+        MissionComplete.SetActive(true);
+
+        Time.timeScale = 0f;
+    }
 
 }
