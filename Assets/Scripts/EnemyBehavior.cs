@@ -39,7 +39,7 @@ public class EnemyBehavior : MonoBehaviour
         if(Time.time >= nextFireTime){
             Shoot();
 
-            nextFireTime = Time.time + 5f / fireRate;
+            nextFireTime = Time.time + 4f / fireRate;
         }
 
     
@@ -57,7 +57,7 @@ public class EnemyBehavior : MonoBehaviour
     void OnCollisionEnter(Collision other) {
         if (other.gameObject.CompareTag("Bullet"))
         {
-            BulletDamage(30);
+            BulletDamage(15);
             Health();
             
 

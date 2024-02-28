@@ -2643,7 +2643,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 1.430027, y: 2.8600008}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -3557,7 +3557,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Enemies Left:'
+  m_text: 'Enemies Felled:'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7d194179ee9648d4292d7cb84c998510, type: 2}
   m_sharedMaterial: {fileID: -3690926902457784388, guid: 7d194179ee9648d4292d7cb84c998510, type: 2}
@@ -4722,7 +4722,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1100133635
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4790,7 +4790,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 1.430027, y: 2.8600008}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -5269,7 +5269,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1318900169
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8167,11 +8167,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7757843412681522318, guid: 25694d1d9ff3c4283aa4997e252571e0, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 4.6566123e-10
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7757843412681522318, guid: 25694d1d9ff3c4283aa4997e252571e0, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -1.7462297e-10
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7757843412681522319, guid: 25694d1d9ff3c4283aa4997e252571e0, type: 3}
       propertyPath: m_Follow
@@ -8207,7 +8207,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7757843412714083432, guid: 25694d1d9ff3c4283aa4997e252571e0, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.0031721173
+      value: -0.003172117
       objectReference: {fileID: 0}
     - target: {fileID: 7757843412714083432, guid: 25694d1d9ff3c4283aa4997e252571e0, type: 3}
       propertyPath: m_LocalRotation.z
