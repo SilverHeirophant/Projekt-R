@@ -4,9 +4,8 @@ using UnityEngine;
 
 public class BulletBehaviour : MonoBehaviour
 {
-    public int speed;
-    public int damage;
-    public float traveltime;
+    public float maxZ = 450f;
+    public float minZ = 100f;
 
     // Start is called before the first frame update
     void Start()
@@ -17,6 +16,18 @@ public class BulletBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        Vector3 currentPosition = transform.position;
+        currentPosition.z = Mathf.Clamp(currentPosition.z, minZ, maxZ);
+        transform.position = currentPosition;
+    
     }
+
+    void OnCollisionEnter(Collision other) 
+    {
+        if (other.gameObject.CompareTag("Enemy"))
+        {
+            Debug.Log("Confirmed hit!");
+        }
+    }
+
 }

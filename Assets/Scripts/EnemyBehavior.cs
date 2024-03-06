@@ -7,56 +7,80 @@ using UnityEngine.Windows;
 
 public class EnemyBehavior : MonoBehaviour
 {
-    public int speed;
+    public ScoreManager scoreManager;
     public int maxHealth;
     public int currentHealth;
+    public Transform firePoint;
+    public float bulletForce = 15f;
+    public float fireRate = 1f;
 
+    [SerializeField] GameObject particleEffect;
+    
     //Future Suggestions
-    public Health HP;
+    public EnemiHP HP;
     public GameObject bulletPrefab;
 
     public Rigidbody rigidbody;
-    private bool playerDetection;
+    private float nextFireTime;
     
     // Start is called before the first frame update
     void Start()
     {
         rigidbody = GetComponent<Rigidbody>();
+        HP = GetComponent<EnemiHP>();
 
         currentHealth = maxHealth;
+        particleEffect.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(Vector3.forward * speed * Time.deltaTime);
-    
-        if (currentHealth < 0)
-        {
-            Destroy(gameObject);
+        if(Time.time >= nextFireTime){
+            Shoot();
+
+            nextFireTime = Time.time + 4f / fireRate;
         }
+
+    
     }
 
-    private void OnTriggerEnter(Collider other)
-        {
-            if (other.name == "Player")
-            {
-                playerDetection = true;
-            }
-        }
+    void Shoot()
+    {
+        //Spawn the bullet in front of the enemi plane
+        bulletPrefab = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+        Rigidbody bulletRB = bulletPrefab.GetComponent<Rigidbody>();
 
-    private void OnCollisionEnter(Collision other) {
+        bulletRB.velocity = firePoint.forward * bulletForce;
+    }
+
+    void OnCollisionEnter(Collision other) {
         if (other.gameObject.CompareTag("Bullet"))
         {
-            BulletDamage(20);
-            Debug.Log("Confirmed hit!");
+            BulletDamage(15);
+            Health();
+            
+
         }
     }
 
     void BulletDamage(int damage)
     {
         currentHealth -= damage;
-        HP.SetHealth(currentHealth);
+        particleEffect.SetActive(true);
+        
+
+        //HP.SetHealth(currentHealth);
+    }
+
+    void Health()
+    {
+        if (currentHealth <= 0)
+        {
+            scoreManager.IncreaseScore(1);
+            Destroy(gameObject);
+            
+        }
     }
 
 }
