@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.17316318, g: 0.16457182, b: 0.29665613, a: 1}
+  m_IndirectSpecularColor: {r: 0.17323539, g: 0.16459554, b: 0.2966911, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -394,7 +394,7 @@ GameObject:
   - component: {fileID: 370178833}
   - component: {fileID: 370178831}
   m_Layer: 0
-  m_Name: Main Menu Music
+  m_Name: Music
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -412,7 +412,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 467ff29d7afe04a21b11d24c21bc679c, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.8
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -2937,6 +2937,10 @@ PrefabInstance:
     - target: {fileID: 8763413972159641537, guid: a9ebe55ab177e8d499923df554bc20be, type: 3}
       propertyPath: m_Name
       value: Button Audio
+      objectReference: {fileID: 0}
+    - target: {fileID: 8763413972159641542, guid: a9ebe55ab177e8d499923df554bc20be, type: 3}
+      propertyPath: m_Volume
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 8763413972159641543, guid: a9ebe55ab177e8d499923df554bc20be, type: 3}
       propertyPath: m_RootOrder
