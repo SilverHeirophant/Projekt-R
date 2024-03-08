@@ -22,6 +22,8 @@ public class lvl2PC : MonoBehaviour
     public int maxBoost;
     public float currentBoost;
     public Boost BBar;
+    public AudioClip fireBullet;
+    public AudioClip Complete;
 
     [SerializeField] GameObject Dialogue;
     
@@ -51,6 +53,9 @@ public class lvl2PC : MonoBehaviour
     {
         Time.timeScale = 0;
         playerRb = GetComponent<Rigidbody>();
+
+        GetComponent<AudioSource>().playOnAwake = false;
+        GetComponent<AudioSource>().clip = fireBullet;
     }
 
     void Start()
@@ -188,6 +193,8 @@ public class lvl2PC : MonoBehaviour
         Rigidbody bulletRb = bulletPrefab.GetComponent<Rigidbody>();
             
         bulletRb.velocity = firePoint.up * bulletSpeed;
+
+        GetComponent<AudioSource>().Play();
     }
 
 

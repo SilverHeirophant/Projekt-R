@@ -111,7 +111,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1825870777587358}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
@@ -243,6 +243,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxZ: 450
   minZ: 100
+  playerScript: {fileID: 0}
 --- !u!108 &61932820485874118
 Light:
   m_ObjectHideFlags: 0

@@ -14,6 +14,7 @@ public class EnemyBehavior : MonoBehaviour
     public float bulletForce;
     public float fireRate;
     public float fireElapsed;
+    
 
     [SerializeField] GameObject particleEffect;
     
