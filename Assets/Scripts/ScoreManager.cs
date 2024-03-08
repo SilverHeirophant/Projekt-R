@@ -12,22 +12,28 @@ public class ScoreManager : MonoBehaviour
     public TextMeshProUGUI numberScore;
     
     //Level 2 downed enemies scoring system
-    public TextMeshProUGUI maxEnemiesFallen;
+    public TextMeshProUGUI EnemiesLeft;
     public TextMeshProUGUI currentEnemiesKilled;
+    [SerializeField] GameObject MainHUD;
+    [SerializeField] GameObject MissionComplete;
     
+    private int score2 = 0;
     private int score = 0;
-    private int enemyScore = 5;
+    private int maxPoints = 5;
     
     //Initializing the instance of score before the game starts
     private void Awake()
     {
         instance = this;
+        
     }
     
     // Start is called before the first frame update
     void Start()
     {
         //scoreText.text = "Score: " + score.ToString();
+        
+        
     }
 
     public void AddScore(int scoreToAdd)
@@ -36,12 +42,21 @@ public class ScoreManager : MonoBehaviour
         scoreText.text = "Score: " + score.ToString();
     }
 
-    /*
-    public void SubEnemyScore(int scoreToSub)
+    public void IncreaseScore(int points)
     {
-        enemyScore -= scoreToSub;
-        enemyScore.text = "Enemies Left" + enemyScore.ToString();
+        score2 += points;
+        EnemiesLeft.text = "Enemies Felled: " + score2.ToString();
+
+        if(score2 == maxPoints){
+            EndOfTheGame();
+        }
+    
     }
 
-*/
+    void EndOfTheGame(){
+        MissionComplete.SetActive(true);
+
+        Time.timeScale = 0f;
+    }
+
 }

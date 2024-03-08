@@ -11,6 +11,9 @@ public class PlayerController : MonoBehaviour
     public float smooth = 1f;
     public int speed;
     public int boost;
+
+    //Audio 
+    public AudioClip RingCollected;
     
     //Health Bar thingies
     public int maxHealth;
@@ -41,9 +44,10 @@ public class PlayerController : MonoBehaviour
     private Quaternion targetRotation;
 
     //Holdon
-    //private float postilt = 25;
-    //private float negTilt = -25;
-    //private float turnWait = 1.0f;
+    private float postilt = 45;
+    private float negTilt = -45;
+    private float turnWait = 1.0f;
+    private int Enemies = 5;
     
     void Awake()
     {
@@ -65,6 +69,10 @@ public class PlayerController : MonoBehaviour
         MissionComplete.SetActive(false);
 
         targetRotation = transform.rotation;
+
+
+        GetComponent<AudioSource>().playOnAwake = false;
+        GetComponent<AudioSource>().clip = RingCollected;
     }
 
 
@@ -77,6 +85,37 @@ public class PlayerController : MonoBehaviour
 
         // Movement inputs. Up allows it to move forwards constantly. Intentional. Forward allows it to move up and down and left allows it to move left and right.
         transform.Translate(Vector3.up * speed * Time.deltaTime);
+        
+        /*
+        //Makes the player ship tilt on horizontal input value > 0 or < 0
+        if (horizontalInput > 0)
+        {
+            playerRb.AddRelativeTorque(Vector3.up * negTilt * Time.deltaTime);
+            //transform.Rotate(Vector3.up * 25 * Time.deltaTime, Space.World);
+            //Debug.Log("turning right");
+
+            Quaternion target = Quaternion.Euler(transform.rotation.x, 90, 90);
+            transform.rotation = Quaternion.RotateTowards(transform.rotation, target, turnWait * Time.deltaTime);
+
+            if(verticalInput > 0){
+                transform.Translate(Vector3.up * speed * Time.deltaTime);
+            }
+
+        }
+
+        else if (horizontalInput < 0)
+        {
+            playerRb.AddRelativeTorque(Vector3.up * postilt * Time.deltaTime);
+            //transform.Rotate(Vector3.up * -25 * Time.deltaTime, Space.World);
+            //Debug.Log("turning left");
+
+            Quaternion target = Quaternion.Euler(transform.rotation.x, 90, 90);
+            transform.rotation = Quaternion.RotateTowards(transform.rotation, target, turnWait * Time.deltaTime);
+        }
+
+        
+        
+        */
         transform.Translate(Vector3.forward * horizontalInput * speed * Time.deltaTime);
         transform.Translate(Vector3.left * verticalInput * speed * Time.deltaTime);
 
@@ -161,6 +200,13 @@ public class PlayerController : MonoBehaviour
     
     }
 
+    void OnTriggerEnter(Collision other) {
+        GetComponent<AudioSource>().Play();
+    }
+
+
+
+
     public IEnumerator WaitAfterBoost(float delay)
     {
         while (Input.GetButtonDown("Fire3"))
@@ -177,6 +223,18 @@ public class PlayerController : MonoBehaviour
             AddBoost(maxBoost);
             yield return new WaitForSeconds(10);
         }
+    }
+
+    private System.Collections.IEnumerator AnimateRotationTowards(Transform target, Quaternion rot, float dur){
+        float t = 0f;
+        Quaternion start = target.rotation;
+        while(t < dur){
+            target.rotation = Quaternion.Slerp(start, rot, t / dur);
+            yield return null;
+            t += Time.deltaTime;
+        }
+    
+        target.rotation = rot;
     }
 
     /*
