@@ -39,6 +39,11 @@ public class lvl2PC : MonoBehaviour
     public GameObject bulletPrefab;
     public float bulletSpeed = 20f;
 
+    //Animations
+    public Animator playerAnim;
+    public enum playerStates {Default, tiltRight, tiltLeft, tiltUp, tiltDown}
+
+
     //Private variables
     //private BulletBehavior bulletBehavior;
     private Rigidbody playerRb;
@@ -56,6 +61,8 @@ public class lvl2PC : MonoBehaviour
 
         GetComponent<AudioSource>().playOnAwake = false;
         GetComponent<AudioSource>().clip = fireBullet;
+
+        playerAnim = GetComponent<Animator>();
     }
 
     void Start()
@@ -84,6 +91,24 @@ public class lvl2PC : MonoBehaviour
         // On this very specific script, the background moves not the player ;p
         transform.Translate(Vector3.forward * horizontalInput * speed * Time.deltaTime);
 
+        //If conditions for the animations
+        if (horizontalInput < 0){
+            playerAnim.SetBool("tiltLeft", true);
+            playerAnim.SetBool("tiltRight", false);
+        }
+        else if (horizontalInput > 0){
+            playerAnim.SetBool("tiltRight", true);
+            playerAnim.SetBool("tiltLeft", false);
+        }
+
+        if (verticalInput > 0){
+            playerAnim.SetBool("tiltUp", true);
+            playerAnim.SetBool("tiltDown", false);
+        }
+        else if (verticalInput < 0){
+            playerAnim.SetBool("tiltDown", true);
+            playerAnim.SetBool("tiltUp", false);
+        }
 
         Vector3 currentPosition = transform.position;
         currentPosition.x = Mathf.Clamp(currentPosition.x, minX, maxX);
