@@ -159,6 +159,7 @@ m_PackageAssets:
         - 2.9.4
         - 2.9.5
         - 2.9.7
+        - 2.10.0
         - 3.0.0-pre.3
         - 3.0.0-pre.4
         - 3.0.0-pre.5
@@ -212,6 +213,7 @@ m_PackageAssets:
         - 2.9.4
         - 2.9.5
         - 2.9.7
+        - 2.10.0
         verified: 2.6.17
       dependencies: []
       resolvedDependencies: []
@@ -351,6 +353,7 @@ m_PackageAssets:
         - 2.1.0-preview.6
         - 2.1.0
         - 2.2.0
+        - 2.3.1
         compatible:
         - 1.15.7
         - 1.15.9
@@ -486,6 +489,7 @@ m_PackageAssets:
         - 3.0.25
         - 3.0.26
         - 3.0.27
+        - 3.0.28
         compatible:
         - 1.0.2
         - 1.0.6
@@ -528,6 +532,7 @@ m_PackageAssets:
         - 3.0.25
         - 3.0.26
         - 3.0.27
+        - 3.0.28
         verified: 2.0.7
       dependencies:
       - name: com.unity.test-framework
@@ -811,6 +816,7 @@ m_PackageAssets:
         - 5.2.0
         - 5.2.2
         - 6.0.1-pre.1
+        - 6.0.1-pre.2
         compatible:
         - 4.0.2
         - 4.0.3
@@ -1156,6 +1162,7 @@ m_PackageAssets:
         - 3.2.0-pre.6
         - 3.2.0-pre.7
         - 3.2.0-pre.8
+        - 3.2.0-pre.9
         - 4.0.0-pre.1
         - 4.0.0-pre.2
         compatible:
@@ -1170,6 +1177,7 @@ m_PackageAssets:
         - 3.2.0-pre.6
         - 3.2.0-pre.7
         - 3.2.0-pre.8
+        - 3.2.0-pre.9
         verified: 3.0.8
       dependencies:
       - name: com.unity.ugui
@@ -3388,6 +3396,7 @@ m_PackageAssets:
         - 1.12.0
         - 1.12.1
         - 1.12.2
+        - 1.12.4
         compatible:
         - 1.0.1
         - 1.1.0-pre.7
@@ -3416,6 +3425,7 @@ m_PackageAssets:
         - 1.12.0
         - 1.12.1
         - 1.12.2
+        - 1.12.4
         verified: 1.0.1
       dependencies:
       - name: com.unity.modules.unitywebrequest
