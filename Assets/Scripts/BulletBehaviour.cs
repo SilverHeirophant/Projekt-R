@@ -5,12 +5,13 @@ using UnityEngine;
 public class BulletBehaviour : MonoBehaviour
 {
     public float maxZ = 450f;
-    public float minZ = 100f;
+    public float minZ = 120f;
+    public lvl2PC playerScript;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        playerScript = GetComponent<lvl2PC>();
     }
 
     // Update is called once per frame
@@ -19,7 +20,7 @@ public class BulletBehaviour : MonoBehaviour
         Vector3 currentPosition = transform.position;
         currentPosition.z = Mathf.Clamp(currentPosition.z, minZ, maxZ);
         transform.position = currentPosition;
-    
+
     }
 
     void OnCollisionEnter(Collision other) 
@@ -28,6 +29,18 @@ public class BulletBehaviour : MonoBehaviour
         {
             Debug.Log("Confirmed hit!");
         }
+
     }
+
+    void OnTriggerEnter(Collider other) {
+        if (other.gameObject.CompareTag("Player"))
+        {
+            Debug.Log("Player hit!");
+            Destroy(gameObject);
+            
+            //playerScript.TakeDamage(5);
+        }
+    }
+
 
 }

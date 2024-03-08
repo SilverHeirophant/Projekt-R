@@ -45,7 +45,7 @@ public class ScoreManager : MonoBehaviour
     public void IncreaseScore(int points)
     {
         score2 += points;
-        EnemiesLeft.text = "Enemies Left: " + score2.ToString();
+        EnemiesLeft.text = "Enemies Felled: " + score2.ToString();
 
         if(score2 == maxPoints){
             EndOfTheGame();

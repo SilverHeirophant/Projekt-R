@@ -11,6 +11,9 @@ public class PlayerController : MonoBehaviour
     public float smooth = 1f;
     public int speed;
     public int boost;
+
+    //Audio 
+    public AudioClip RingCollected;
     
     //Health Bar thingies
     public int maxHealth;
@@ -66,6 +69,10 @@ public class PlayerController : MonoBehaviour
         MissionComplete.SetActive(false);
 
         targetRotation = transform.rotation;
+
+
+        GetComponent<AudioSource>().playOnAwake = false;
+        GetComponent<AudioSource>().clip = RingCollected;
     }
 
 
@@ -192,6 +199,13 @@ public class PlayerController : MonoBehaviour
         }
     
     }
+
+    void OnTriggerEnter(Collision other) {
+        GetComponent<AudioSource>().Play();
+    }
+
+
+
 
     public IEnumerator WaitAfterBoost(float delay)
     {

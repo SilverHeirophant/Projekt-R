@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 4753104869912159664}
   - component: {fileID: 4340574105254652006}
   - component: {fileID: 4340574105254652005}
+  - component: {fileID: 5960237392174653611}
   m_Layer: 3
   m_Name: Player
   m_TagString: Untagged
@@ -142,6 +143,26 @@ MonoBehaviour:
   MainHUD: {fileID: 0}
   MissionComplete: {fileID: 0}
   bulletPrefab: {fileID: 1825870777587358, guid: 9568f15e6607c70469b5b2657c7cd0b3, type: 3}
+  throwforce: 0
+--- !u!95 &5960237392174653611
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4340574105254652004}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 766510fa5c7586643af53ebb3891656a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &6774244427199587284
 PrefabInstance:
   m_ObjectHideFlags: 0

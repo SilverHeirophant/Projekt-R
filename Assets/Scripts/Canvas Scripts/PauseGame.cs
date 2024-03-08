@@ -27,7 +27,8 @@ public class PauseGame : MonoBehaviour
     public void Pause()
     {
         Time.timeScale = 0;
-        PauseButton.SetActive(false);
+        
+        
         PauseMenu.SetActive(true);
         Debug.Log("paus");
     }
@@ -42,6 +43,8 @@ public class PauseGame : MonoBehaviour
     public void MissionMenuSpawn()
     {
         Mission1UI.SetActive(false);
+        Mission2UI.SetActive(false);
+
         MissionMenu.SetActive(true);
     }
 

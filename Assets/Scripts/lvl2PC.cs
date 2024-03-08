@@ -134,7 +134,7 @@ public class lvl2PC : MonoBehaviour
     
     }
     //also testing the health bar :p
-    void TakeDamage(int damage)
+    public void TakeDamage(int damage)
     {
         currentHealth -= damage;
         HBar.SetHealth(currentHealth);
