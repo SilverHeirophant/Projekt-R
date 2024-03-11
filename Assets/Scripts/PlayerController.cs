@@ -13,7 +13,8 @@ public class PlayerController : MonoBehaviour
     public int boost;
 
     //Audio 
-    public AudioClip RingCollected;
+    public AudioSource RingCollected;
+    public AudioClip JetEngine;
     
     //Health Bar thingies
     public int maxHealth;
@@ -71,8 +72,9 @@ public class PlayerController : MonoBehaviour
         targetRotation = transform.rotation;
 
 
-        GetComponent<AudioSource>().playOnAwake = false;
-        GetComponent<AudioSource>().clip = RingCollected;
+        RingCollected = GetComponent<AudioSource>();
+        JetEngine = GetComponent<AudioSource>().clip;
+        JetEngine = GetComponent<AudioSource>().playOnAwake = false;
     }
 
 
@@ -85,6 +87,14 @@ public class PlayerController : MonoBehaviour
 
         // Movement inputs. Up allows it to move forwards constantly. Intentional. Forward allows it to move up and down and left allows it to move left and right.
         transform.Translate(Vector3.up * speed * Time.deltaTime);
+        if (speed > 0)
+        {
+            JetEngine.Play();
+        }
+        else if (speed <= 0)
+        {
+            JetEngine.Stop();
+        }
         
         /*
         //Makes the player ship tilt on horizontal input value > 0 or < 0
@@ -186,6 +196,8 @@ public class PlayerController : MonoBehaviour
         if(collision.gameObject.CompareTag("Rings"))
         {
             ScoreManager.instance.AddScore(1);
+            RingCollected.Play();
+
             Destroy(collision.gameObject);
         }
     
@@ -201,7 +213,7 @@ public class PlayerController : MonoBehaviour
     }
 
     void OnTriggerEnter(Collision other) {
-        GetComponent<AudioSource>().Play();
+        RingCollected.Play();
     }
 
 
