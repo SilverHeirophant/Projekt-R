@@ -1877,6 +1877,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 82399120985686150, guid: a37573ad5d3fb7a47997aadbf0976202, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114073182108852144, guid: a37573ad5d3fb7a47997aadbf0976202, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a37573ad5d3fb7a47997aadbf0976202, type: 3}
 --- !u!1 &392203717
@@ -7184,7 +7192,7 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -14968,7 +14976,7 @@ PrefabInstance:
     - target: {fileID: 4340574105254652005, guid: 9580d704ffa454342ab57da0d93be64e, type: 3}
       propertyPath: RingCollected
       value: 
-      objectReference: {fileID: 8300000, guid: c5cb2ac29e89dbf43a9b644caaad45e6, type: 3}
+      objectReference: {fileID: 578637280}
     - target: {fileID: 4340574105254652005, guid: 9580d704ffa454342ab57da0d93be64e, type: 3}
       propertyPath: MissionComplete
       value: 
