@@ -11,8 +11,10 @@ public class EnemyBehavior : MonoBehaviour
     public int maxHealth;
     public int currentHealth;
     public Transform firePoint;
-    public float bulletForce = 15f;
-    public float fireRate = 1f;
+    public float bulletForce;
+    public float fireRate;
+    public float fireElapsed;
+    
 
     [SerializeField] GameObject particleEffect;
     
@@ -21,13 +23,14 @@ public class EnemyBehavior : MonoBehaviour
     public GameObject bulletPrefab;
 
     public Rigidbody rigidbody;
-    private float nextFireTime;
+    public float delay;
     
     // Start is called before the first frame update
     void Start()
     {
         rigidbody = GetComponent<Rigidbody>();
         HP = GetComponent<EnemiHP>();
+        
 
         currentHealth = maxHealth;
         particleEffect.SetActive(false);
@@ -36,10 +39,13 @@ public class EnemyBehavior : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Time.time >= nextFireTime){
-            Shoot();
+        fireElapsed += Time.deltaTime;
+         //delay = Random.Range(2, 8);
 
-            nextFireTime = Time.time + 4f / fireRate;
+        if (fireElapsed >= delay)
+        {
+            fireElapsed = 0;
+            Shoot();
         }
 
     
@@ -52,17 +58,18 @@ public class EnemyBehavior : MonoBehaviour
         Rigidbody bulletRB = bulletPrefab.GetComponent<Rigidbody>();
 
         bulletRB.velocity = firePoint.forward * bulletForce;
+
     }
 
     void OnCollisionEnter(Collision other) {
         if (other.gameObject.CompareTag("Bullet"))
         {
-            BulletDamage(15);
+            BulletDamage(10);
             Health();
-            
-
         }
+        
     }
+
 
     void BulletDamage(int damage)
     {

@@ -22,6 +22,8 @@ public class lvl2PC : MonoBehaviour
     public int maxBoost;
     public float currentBoost;
     public Boost BBar;
+    public AudioClip fireBullet;
+    public AudioClip Complete;
 
     [SerializeField] GameObject Dialogue;
     
@@ -37,6 +39,11 @@ public class lvl2PC : MonoBehaviour
     public GameObject bulletPrefab;
     public float bulletSpeed = 20f;
 
+    //Animations
+    public Animator playerAnim;
+    public enum playerStates {Default, tiltRight, tiltLeft, tiltUp, tiltDown}
+
+
     //Private variables
     //private BulletBehavior bulletBehavior;
     private Rigidbody playerRb;
@@ -51,6 +58,11 @@ public class lvl2PC : MonoBehaviour
     {
         Time.timeScale = 0;
         playerRb = GetComponent<Rigidbody>();
+
+        GetComponent<AudioSource>().playOnAwake = false;
+        GetComponent<AudioSource>().clip = fireBullet;
+
+        playerAnim = GetComponent<Animator>();
     }
 
     void Start()
@@ -79,6 +91,24 @@ public class lvl2PC : MonoBehaviour
         // On this very specific script, the background moves not the player ;p
         transform.Translate(Vector3.forward * horizontalInput * speed * Time.deltaTime);
 
+        //If conditions for the animations
+        if (horizontalInput < 0){
+            playerAnim.SetBool("tiltLeft", true);
+            playerAnim.SetBool("tiltRight", false);
+        }
+        else if (horizontalInput > 0){
+            playerAnim.SetBool("tiltRight", true);
+            playerAnim.SetBool("tiltLeft", false);
+        }
+
+        if (verticalInput > 0){
+            playerAnim.SetBool("tiltUp", true);
+            playerAnim.SetBool("tiltDown", false);
+        }
+        else if (verticalInput < 0){
+            playerAnim.SetBool("tiltDown", true);
+            playerAnim.SetBool("tiltUp", false);
+        }
 
         Vector3 currentPosition = transform.position;
         currentPosition.x = Mathf.Clamp(currentPosition.x, minX, maxX);
@@ -134,7 +164,7 @@ public class lvl2PC : MonoBehaviour
     
     }
     //also testing the health bar :p
-    void TakeDamage(int damage)
+    public void TakeDamage(int damage)
     {
         currentHealth -= damage;
         HBar.SetHealth(currentHealth);
@@ -188,6 +218,8 @@ public class lvl2PC : MonoBehaviour
         Rigidbody bulletRb = bulletPrefab.GetComponent<Rigidbody>();
             
         bulletRb.velocity = firePoint.up * bulletSpeed;
+
+        GetComponent<AudioSource>().Play();
     }
 
 
