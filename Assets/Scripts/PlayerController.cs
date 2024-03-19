@@ -14,7 +14,7 @@ public class PlayerController : MonoBehaviour
 
     //Audio 
     public AudioSource RingCollected;
-    public AudioClip JetEngine;
+    //public AudioClip JetEngine;
     
     //Health Bar thingies
     public int maxHealth;
@@ -73,8 +73,11 @@ public class PlayerController : MonoBehaviour
 
 
         RingCollected = GetComponent<AudioSource>();
+        /*
         JetEngine = GetComponent<AudioSource>().clip;
         JetEngine = GetComponent<AudioSource>().playOnAwake = false;
+        */    
+    
     }
 
 
@@ -89,11 +92,11 @@ public class PlayerController : MonoBehaviour
         transform.Translate(Vector3.up * speed * Time.deltaTime);
         if (speed > 0)
         {
-            JetEngine.Play();
+            //JetEngine.Play();
         }
         else if (speed <= 0)
         {
-            JetEngine.Stop();
+            //JetEngine.Stop();
         }
         
         /*
