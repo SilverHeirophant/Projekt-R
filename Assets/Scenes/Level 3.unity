@@ -276,15 +276,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4122938131327598, guid: a37573ad5d3fb7a47997aadbf0976202, type: 3}
       propertyPath: m_LocalScale.x
-      value: 300
+      value: 450
       objectReference: {fileID: 0}
     - target: {fileID: 4122938131327598, guid: a37573ad5d3fb7a47997aadbf0976202, type: 3}
       propertyPath: m_LocalScale.y
-      value: 300
+      value: 600
       objectReference: {fileID: 0}
     - target: {fileID: 4122938131327598, guid: a37573ad5d3fb7a47997aadbf0976202, type: 3}
       propertyPath: m_LocalScale.z
-      value: 300
+      value: 600
       objectReference: {fileID: 0}
     - target: {fileID: 4122938131327598, guid: a37573ad5d3fb7a47997aadbf0976202, type: 3}
       propertyPath: m_LocalPosition.x
@@ -329,8 +329,9 @@ PrefabInstance:
     - target: {fileID: 23188286496353356, guid: a37573ad5d3fb7a47997aadbf0976202, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 9f7b996f7d2754cfa8e7e4f50c320c9c, type: 2}
-    m_RemovedComponents: []
+      objectReference: {fileID: 2100000, guid: ca65527f5c4acee46b979273b9a166fd, type: 2}
+    m_RemovedComponents:
+    - {fileID: 114073182108852144, guid: a37573ad5d3fb7a47997aadbf0976202, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: a37573ad5d3fb7a47997aadbf0976202, type: 3}
 --- !u!1001 &337437899
 PrefabInstance:
@@ -1513,7 +1514,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3400836970719468805, guid: 9580d704ffa454342ab57da0d93be64e, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4340574105254652003, guid: 9580d704ffa454342ab57da0d93be64e, type: 3}
       propertyPath: m_RootOrder
@@ -2102,9 +2103,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2378707647913955475, guid: ddfd9fd5ae093408aa735bc65413f31b, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5821738738649501060, guid: ddfd9fd5ae093408aa735bc65413f31b, type: 3}
       propertyPath: m_Name
       value: Enemy 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821738738649501060, guid: ddfd9fd5ae093408aa735bc65413f31b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7776458782521037458, guid: ddfd9fd5ae093408aa735bc65413f31b, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8559995458847753211, guid: ddfd9fd5ae093408aa735bc65413f31b, type: 3}
       propertyPath: m_RootOrder
