@@ -1,0 +1,38 @@
+Gameplay/World
+3D Realistic Terrain Free
+-Bad Raccoon -Version 1.3
+
+AllSky Free - 10 Sky Skybox Set
+-rpgwhitelock -Version 1.1.0
+
+Particle Pack
+-Unity -Version 1.7
+
+Planet Earth Free
+-headwards -Version 2.0
+
+Simple Collectibles Pack
+-Dillion Wallace -Version 1.0
+
+UI
+Sci-fi GUI skin
+-3d.rina -Version 1.2
+
+UI Samples
+-Unity -Version 1.2.3
+
+
+
+Audio
+Coins Sfx
+-Little Robot Sound Factory -Version 1.0
+
+Free Cinematic Sound Effects
+-Gregor Quendel -Version 1.0
+
+Free Crowd Cheering Sounds
+-Gregor Quendel -Version 1.0
+
+Universe Game Music : Ambient Music
+-BenBeardMusic -Version 1.0
+

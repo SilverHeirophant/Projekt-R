@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4831639, g: 0.5280341, b: 0.59735894, a: 1}
+  m_IndirectSpecularColor: {r: 0.48316282, g: 0.5280332, b: 0.5973567, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1559,7 +1559,7 @@ GameObject:
   - component: {fileID: 331817114}
   m_Layer: 0
   m_Name: PING
-  m_TagString: Ping
+  m_TagString: Rings
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7868,6 +7868,7 @@ GameObject:
   - component: {fileID: 736999720}
   - component: {fileID: 736999719}
   - component: {fileID: 736999718}
+  - component: {fileID: 736999721}
   m_Layer: 5
   m_Name: Back To Earth
   m_TagString: Untagged
@@ -7989,6 +7990,35 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 736999716}
   m_CullTransparentMesh: 1
+--- !u!114 &736999721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 736999716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 27270837}
+          m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+          m_MethodName: Play
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1001 &749145487
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11275,6 +11305,7 @@ GameObject:
   - component: {fileID: 1431144581}
   - component: {fileID: 1431144580}
   - component: {fileID: 1431144579}
+  - component: {fileID: 1431144582}
   m_Layer: 5
   m_Name: Back To Menu
   m_TagString: Untagged
@@ -11396,6 +11427,35 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1431144577}
   m_CullTransparentMesh: 1
+--- !u!114 &1431144582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1431144577}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 27270837}
+          m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+          m_MethodName: Play
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1456039978
 GameObject:
   m_ObjectHideFlags: 0
@@ -12000,10 +12060,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PauseMenu: {fileID: 1147884230}
-  PauseButton: {fileID: 0}
-  MissionMenu: {fileID: 0}
-  Mission1UI: {fileID: 0}
-  Mission2UI: {fileID: 0}
+  PauseButton: {fileID: 1612126908}
+  MissionMenu: {fileID: 1004337623}
+  Mission1UI: {fileID: 1169883221}
+  Mission2UI: {fileID: 1169883221}
 --- !u!4 &1542674658
 Transform:
   m_ObjectHideFlags: 0
@@ -12506,7 +12566,7 @@ GameObject:
   - component: {fileID: 1640336538}
   m_Layer: 0
   m_Name: Player Detection
-  m_TagString: Untagged
+  m_TagString: Rings
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
