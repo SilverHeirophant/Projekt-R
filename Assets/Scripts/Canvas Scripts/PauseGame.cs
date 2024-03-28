@@ -11,14 +11,16 @@ public class PauseGame : MonoBehaviour
     [SerializeField] GameObject MissionMenu;
     [SerializeField] GameObject Mission1UI;
     [SerializeField] GameObject Mission2UI;
+    [SerializeField] GameObject FinalMission;
     
     void Start()
     {
-        //true ones || Earth
+        //false ones || Earth
         PauseMenu.SetActive(false);
         Mission1UI.SetActive(false);
         Mission2UI.SetActive(false);
-        //false ones
+        FinalMission.SetActive(false);
+        //true ones
         MissionMenu.SetActive(true);
         
         
@@ -58,5 +60,11 @@ public class PauseGame : MonoBehaviour
         MissionMenu.SetActive(false);
         Mission2UI.SetActive(true);
     }
+
+    public void FinalMissionUI(){
+        MissionMenu.SetActive(false);
+        FinalMission.SetActive(true);
+    }
+
 
 }

@@ -21,6 +21,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Level 2.unity
     guid: a0d949dc79e8e4c238ffbfb2f9519d7b
   - enabled: 1
-    path: Assets/Scenes/EarthMissionSelect.unity
-    guid: 6127b5d27fd754d7bb88de2321afbc41
+    path: Assets/Scenes/Level 3.unity
+    guid: 6225e933c9bf6d7488303db36667bb79
+  - enabled: 1
+    path: Assets/Scenes/CreditScene.unity
+    guid: dfe4ca0ea4686436ab5717771c5deef2
   m_configObjects: {}

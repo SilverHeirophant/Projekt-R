@@ -36,4 +36,13 @@ public class UIButtons : MonoBehaviour
         SceneManager.LoadScene("Level 2");
     }
 
+    public void FinalLevelScene(){
+        SceneManager.LoadScene("Level 3");
+    }
+
+    public void Credits(){
+        SceneManager.LoadScene("CreditScene");
+    }
+
+
 }

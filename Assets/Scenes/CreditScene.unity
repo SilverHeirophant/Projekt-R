@@ -165,6 +165,8 @@ GameObject:
   m_Component:
   - component: {fileID: 97348061}
   - component: {fileID: 97348062}
+  - component: {fileID: 97348063}
+  - component: {fileID: 97348064}
   m_Layer: 0
   m_Name: Assets
   m_TagString: Untagged
@@ -208,6 +210,32 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &97348063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 97348060}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe525f84443ab964b86dc89c1d5827ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CreditsAnim: {fileID: 97348062}
+--- !u!114 &97348064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 97348060}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates: []
 --- !u!1 &448936741
 GameObject:
   m_ObjectHideFlags: 0
@@ -832,7 +860,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -183, y: 1864}
+  m_AnchoredPosition: {x: -183, y: 1843}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &855679737
@@ -1025,6 +1053,7 @@ GameObject:
   m_Component:
   - component: {fileID: 856198244}
   - component: {fileID: 856198245}
+  - component: {fileID: 856198246}
   m_Layer: 5
   m_Name: Producers :)
   m_TagString: Untagged
@@ -1074,6 +1103,23 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &856198246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 856198243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5381278c86fe5c14cb019af8c1db2ea2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timer: 125
+  CreditsAnim: {fileID: 856198245}
+  Assets: {fileID: 97348063}
+  Producers: {fileID: 856198243}
+  Goodbye: {fileID: 1556327789}
 --- !u!1 &977417678
 GameObject:
   m_ObjectHideFlags: 0
@@ -2160,7 +2206,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1556327790
 RectTransform:
   m_ObjectHideFlags: 0

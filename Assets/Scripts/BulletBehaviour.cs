@@ -7,11 +7,13 @@ public class BulletBehaviour : MonoBehaviour
     public float maxZ = 450f;
     public float minZ = 120f;
     public lvl2PC playerScript;
+    public lvl3PC player3;
 
     // Start is called before the first frame update
     void Start()
     {
         playerScript = GetComponent<lvl2PC>();
+        player3 = GetComponent<lvl3PC>();
     }
 
     // Update is called once per frame
@@ -42,5 +44,16 @@ public class BulletBehaviour : MonoBehaviour
         }
     }
 
+    /*
+    if(currentPosition > maxZ){
+        Destroy(gameObject);
+        Debug.Log("It went to far!")
+    }
+
+    if(currentPosition < minZ){
+        Destroy(gameObject);
+        Debug.Log("It went under!")
+    }
+*/
 
 }
